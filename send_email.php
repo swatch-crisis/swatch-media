@@ -3,22 +3,32 @@ $errors = [];
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get POST data
-    $name = isset($_POST['name']) ? strip_tags(trim($_POST['name'])) : '';
-    $email = isset($_POST['email']) ? trim($_POST['email']) : '';
+    $Name = isset($_POST['Name']) ? strip_tags(trim($_POST['Name'])) : '';
+    $Email = isset($_POST['Email']) ? trim($_POST['Email']) : '';
+    $Service = isset($_POST['Service']) ? strip_tags(trim($_POST['Service'])) : '';
+    $Date = isset($_POST['Date']) ? strip_tags(trim($_POST['Date'])) : '';
     $message = isset($_POST['message']) ? strip_tags(trim($_POST['message'])) : '';
 
     // Validate form fields
-    if (empty($name)) {
+    if (empty($Name)) {
         $errors[] = 'Name is empty';
     }
 
-    if (empty($email)) {
+    if (empty($Email)) {
         $errors[] = 'Email is empty';
-    } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    } else if (!filter_var($Email, FILTER_VALIDATE_EMAIL)) {
         $errors[] = 'Email is invalid';
     }
 
-    if (empty($message)) {
+     if (empty($Service)) {
+        $errors[] = 'Service not entered';
+    }
+    
+    if (empty($Date)) {
+        $errors[] = 'Date not entered';
+    }
+    
+    if (empty($Message)) {
         $errors[] = 'Message is empty';
     }
 
