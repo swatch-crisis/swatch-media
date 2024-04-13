@@ -1,163 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Swatch Media</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/slogo2022.jpg">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
 
-.button {
-  background-color: aqua;
-  border: none;
-  padding: 10px 10px;
-  text-align: center;
-  border-radius: 16px;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor:default;
-  
-  text-shadow: 1px 1px 1px #000;
-}
-      html {
+<head>
+  <title>Swatch Media</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/slogo2022.jpg">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .button {
+      background-color: aqua;
+      border: none;
+      padding: 10px 10px;
+      text-align: center;
+      border-radius: 16px;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: default;
+
+      text-shadow: 1px 1px 1px #000;
+    }
+
+    html {
       scroll-behavior: smooth;
     }
-    h1,h3,h4,h5,h6 {font-family: "Roboto"}
-    h2 {font-style: italic;
-        font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-        font-weight: bolder;
-        font-display: block;
+
+    h1,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Roboto"
     }
-    body {font-family: "Source Sans Pro"}
+
+    h2 {
+      font-style: italic;
+      font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+      font-weight: bolder;
+      font-display: block;
+    }
+
+    body {
+      font-family: "Source Sans Pro"
+    }
 
     .myBtn {
-    display: none;
-    position: absolute;
-    background-color: aqua ;
-    bottom: 20px; 
-    left: 500px; 
-    z-index: 99; 
-    border: aquamarine; 
-    outline: aquamarine;
-   
-    } 
+      display: none;
+      position: absolute;
+      background-color: aqua;
+      bottom: 20px;
+      left: 500px;
+      z-index: 99;
+      border: aquamarine;
+      outline: aquamarine;
 
-  .myBtn:hover {
-    background-color: aqua; 
-  }
+    }
 
-  #myBtn {
-    border: none;
-    padding: 10px;
-  }
+    .myBtn:hover {
+      background-color: aqua;
+    }
 
-  table, th, td {
-  border:1px solid black;
-}
+    #myBtn {
+      border: none;
+      padding: 10px;
+    }
 
-    </style>
-  </head>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+    }
+  </style>
+</head>
 
 <body class="w3-light-white w3-margin">
-  
-
-<!-- Navigation bar with links -->
-<div id="navbar"  class="fixed-navbar" style="position: fixed; top: 0; left: 0; right: 0; z-index: 9999; width: 100%; height: 65px; background-color: rgb(255, 255, 255) ;" class="w3-bar w3-white w3-text-black"> 
-  <img src="images/slogo2022.jpg" class="w3-left " alt="Swatch Media Logo" width="60" height="60">
-  <h2 class="w3-left w3-tag w3-white w3-round w3-black">SWATCH MEDIA</h2>
-  <a href="#Contact" class="w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right" style="margin-top:10px;">CONTACT US</a>
-  <a href="#Our_Profile" class="w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right" style="margin-top:10px;">OUR PROFILE</a>
-  <a href="#Portfolio" class="w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right" style="margin-top:10px;">PORTFOLIO</a>
-  <a href="#Home" class="w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right" style="margin-top:10px;">HOME</a>
-  <a href="demo" class="w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large" style="margin-top:10px;" onclick="myFunction()">&#9939</a>
-</div>
-
-<!-- Bar mobile view-->
-<div id="demo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-small">
-  <a href="#Home" class="w3-bar-item w3-button">HOME</a>
-  <a href="#Portfolio" class="w3-bar-item w3-button">PORTFOLIO</a>
-  <a href="#Our_Profile" class="w3-bar-item w3-button">OUR PROFILE </a>
-  <a href="#Contact" class="w3-bar-item w3-button">CONTACT US</a>
-</div>
-
-<div class="w3-content" style="max-width:1600px">
-
-  <!-- Image header -->
-  <header class="w3-display-container w3-wide" style="padding-bottom:0px; margin-top: 0px" id="Home">
-    <img class="w3-image" src="https://images.unsplash.com/photo-1587440871875-191322ee64b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80" alt="Photo by Jamie Street" width="1600" height="400">
-    <div class="w3-display-left w3-padding-small">
-      <h1 class="w3-text-black">IT STARTED WITH GRAPHICS</h1>
-      <h1 class="w3-jumbo w3-hover-text-black w3-hide-small "><b>BRANDING AS A PASSION</b></h1>
-      <h6><button class="w3-button w3-round-xlarge w3-aqua w3-padding-large w3-hover-opacity-off"><a href="#Contact" style="text-decoration: none">BOOK A SESSION</a></button></h6>
-    </div>
-  </header>
-
-  <!-- Portfolio section -->
-  <div class="w3-row-padding" id="Portfolio">
-    <div class="w3-center w3-padding-32">
-      <h2 class="w3-wide w3-center">PORTFOLIO</h2>
-         <p class="w3-opacity w3-center"><i>Previous Works</i></p><br>
-         <p class="w3-white w3-text-black w3-center-align">
-    
-Swatch Media started as a graphics and web design company keen on providing professional online presence. We resorted to also provide offline presence. Our main focus is branding and marketing. Our team is filled with passion and we pursue every project with the relevant expertise.
-We work with both companies and individuals particularly start ups who strive to build their brand.
-We are a highly driven, result oriented and creative team with the ability to prioritize and set directon in a fast-paced environment.
-It is our goal to capture the needs and wants of the very fast growing economy inorder to realise the expectations of our current and future clients.
-<p><c>Some of the projects we have undertaken are:</c></p>
-          </p>
-    </div>
 
 
-    <div class= "w3-third w3-margin-bottom">
-      <div class="w3-card-4">
-        <img src="images/heb.png" alt="heb" style="width:100%">
-        <!--<img src="https://images.pexels.com/photos/21022/pexels-photo.jpg" alt="Photo by Sam manns" 
-          style="width:100%">-->
-        <div class="w3-container">
-          <h3>Brand Design</h3>
-          <p class="w3-opacity">HEB ENTERPRISES</p>
-          <p>Our team did a complete rebrand of this organisation. From the logo, colors, typography and photography to all other related visual assets </p>
-          <p><button class="w3-button w3-round-xlarge w3-aqua w3-block"><a href="#Contact" style="text-decoration: none">VIEW PROJECT</a></button></p>
-        </div>
-      </div>
-    </div>
-
-    
-
-    <div class="w3-third w3-margin-bottom">
-      <div class="w3-card-4">
-        <img src="images/BB.jpg" alt="BB" style="width:100%">
-        <!--<img src="https://images.unsplash.com/photo-1630260667842-830a17d12ec9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Photo by Manuel Meza" style="width:100%">-->
-        <div class="w3-container">
-          <h3>Graphics</h3>
-          <p class="w3-opacity">BRYSHI SERVICES LIMITED</p>
-          <p>Our team went all in on this project. This client wanted a logo that would speak for itself and we delivered. It is what we do best. Bold and precise </p>
-          <p><button class="w3-button w3-round-xlarge w3-aqua w3-block"><a href="#Contact" style="text-decoration: none">VIEW PROJECT</a></button></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="w3-third w3-margin-bottom">
-      <div class="w3-card-4">
-        <img src="images/timocard.jpg" alt="timocard" style="width:100%">
-        <!--<img src="https://images.unsplash.com/photo-1458334225161-a5cd4c6ad560?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Photo by Wieger Stienstra" style="width:100%">-->
-        <div class="w3-container">
-          <h3>Web Design</h3>
-          <p class="w3-opacity">AQILA SOFTWARE LIMITED</p>
-          <p>We did a complete brand development project with Aqila. A highly technical client but we delivered a masterpiece in every aspect we worked on. </p>
-          <p><button class="w3-button w3-round-xlarge w3-aqua w3-block"><a href="https://aqila.co.ke/" target="_blank" style="text-decoration: none">VIEW PROJECT</a></button></p>
-        </div>
-      </div>
-    </div>
+  <!-- Navigation bar with links -->
+  <div id="navbar" class="fixed-navbar"
+    style="position: fixed; top: 0; left: 0; right: 0; z-index: 9999; width: 100%; height: 65px; background-color: rgb(255, 255, 255) ;"
+    class="w3-bar w3-white w3-text-black">
+    <img src="images/slogo2022.jpg" class="w3-left " alt="Swatch Media Logo" width="60" height="60">
+    <h2 class="w3-left w3-tag w3-white w3-round w3-black">SWATCH MEDIA</h2>
+    <a href="#Contact" class="w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right"
+      style="margin-top:10px;">CONTACT US</a>
+    <a href="#Our_Profile" class="w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right"
+      style="margin-top:10px;">OUR PROFILE</a>
+    <a href="#Portfolio" class="w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right"
+      style="margin-top:10px;">PORTFOLIO</a>
+    <a href="#Home" class="w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right"
+      style="margin-top:10px;">HOME</a>
+    <a href="demo" class="w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large" style="margin-top:10px;"
+      onclick="myFunction()">&#9939</a>
   </div>
 
-<!-- My CV section 
+  <!-- Bar mobile view-->
+  <div id="demo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-small">
+    <a href="#Home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#Portfolio" class="w3-bar-item w3-button">PORTFOLIO</a>
+    <a href="#Our_Profile" class="w3-bar-item w3-button">OUR PROFILE </a>
+    <a href="#Contact" class="w3-bar-item w3-button">CONTACT US</a>
+  </div>
+
+  <div class="w3-content" style="max-width:1600px">
+
+    <!-- Image header -->
+    <header class="w3-display-container w3-wide" style="padding-bottom:0px; margin-top: 0px" id="Home">
+      <img class="w3-image"
+        src="https://images.unsplash.com/photo-1587440871875-191322ee64b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80"
+        alt="Photo by Jamie Street" width="1600" height="400">
+      <div class="w3-display-left w3-padding-small">
+        <h1 class="w3-text-black">IT STARTED WITH GRAPHICS</h1>
+        <h1 class="w3-jumbo w3-hover-text-black w3-hide-small "><b>BRANDING AS A PASSION</b></h1>
+        <h6><button class="w3-button w3-round-xlarge w3-aqua w3-padding-large w3-hover-opacity-off"><a href="#Contact"
+              style="text-decoration: none">BOOK A SESSION</a></button></h6>
+      </div>
+    </header>
+
+    <!-- Portfolio section -->
+    <div class="w3-row-padding" id="Portfolio">
+      <div class="w3-center w3-padding-32">
+        <h2 class="w3-wide w3-center">PORTFOLIO</h2>
+        <p class="w3-opacity w3-center"><i>Previous Works</i></p><br>
+        <p class="w3-white w3-text-black w3-center-align">
+
+          Swatch Media started as a graphics and web design company keen on providing professional online presence. We
+          resorted to also provide offline presence. Our main focus is branding and marketing. Our team is filled with
+          passion and we pursue every project with the relevant expertise.
+          We work with both companies and individuals particularly start ups who strive to build their brand.
+          We are a highly driven, result oriented and creative team with the ability to prioritize and set directon in a
+          fast-paced environment.
+          It is our goal to capture the needs and wants of the very fast growing economy inorder to realise the
+          expectations of our current and future clients.
+        <p>
+          <c>Some of the projects we have undertaken are:</c>
+        </p>
+        </p>
+      </div>
+
+
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-card-4">
+          <img src="images/heb.png" alt="heb" style="width:100%">
+          <!--<img src="https://images.pexels.com/photos/21022/pexels-photo.jpg" alt="Photo by Sam manns" 
+          style="width:100%">-->
+          <div class="w3-container">
+            <h3>Brand Design</h3>
+            <p class="w3-opacity">HEB ENTERPRISES</p>
+            <p>Our team did a complete rebrand of this organisation. From the logo, colors, typography and photography
+              to all other related visual assets </p>
+            <p><button class="w3-button w3-round-xlarge w3-aqua w3-block"><a href="#Contact"
+                  style="text-decoration: none">VIEW PROJECT</a></button></p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-card-4">
+          <img src="images/BB.jpg" alt="BB" style="width:100%">
+          <!--<img src="https://images.unsplash.com/photo-1630260667842-830a17d12ec9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Photo by Manuel Meza" style="width:100%">-->
+          <div class="w3-container">
+            <h3>Graphics</h3>
+            <p class="w3-opacity">BRYSHI SERVICES LIMITED</p>
+            <p>Our team went all in on this project. This client wanted a logo that would speak for itself and we
+              delivered. It is what we do best. Bold and precise </p>
+            <p><button class="w3-button w3-round-xlarge w3-aqua w3-block"><a href="#Contact"
+                  style="text-decoration: none">VIEW PROJECT</a></button></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-card-4">
+          <img src="images/timocard.jpg" alt="timocard" style="width:100%">
+          <!--<img src="https://images.unsplash.com/photo-1458334225161-a5cd4c6ad560?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Photo by Wieger Stienstra" style="width:100%">-->
+          <div class="w3-container">
+            <h3>Web Design</h3>
+            <p class="w3-opacity">AQILA SOFTWARE LIMITED</p>
+            <p>We did a complete brand development project with Aqila. A highly technical client but we delivered a
+              masterpiece in every aspect we worked on. </p>
+            <p><a href="https://aqila.co.ke/" target="_blank" style="text-decoration: none"> <button
+                  class="w3-button w3-round-xlarge w3-aqua w3-block"> VIEW PROJECT</button></a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- My CV section 
   <div class="w3-white" id="Our_Profile">
     <div class="w3-container">
       <div class="w3-center w3-padding-32">
@@ -171,8 +207,8 @@ It is our goal to capture the needs and wants of the very fast growing economy i
       <div class='card'>
         <object data='Attachments/swatch media company profile.pdf' width ='100%' height='500'>OUR PROFILE</object>
     </div>
-  -->  
- <!-- <br><details style="text-align: center"> 
+  -->
+    <!-- <br><details style="text-align: center"> 
   <summary>TRAINING PROGRAMS</summary>
   <p>THESE FOLLOWING PROGRAMS ARE OFFERED FOR TRAINING:</p>
      <ul style="list-style-type:none">
@@ -185,76 +221,85 @@ It is our goal to capture the needs and wants of the very fast growing economy i
 
   </details></br> -->
 
-  <br><details style="text-align: center" id="Our_Profile">
-  <summary>TRAINING PROGRAMS</summary>
-  <table style="width:55%; margin-left: auto; margin-right: auto;">
-    <tr>
-      <th><h2>TRAINING PROGRAMS OFFERED BY SWATCH MEDIA</h2></th>
-    </tr>
-    <tr style="text-align: left">
-      <td>Web Development</td>
-    </tr>
-    <tr style="text-align: left">
-      <td>Graphic Design</td>
-    </tr>
-    <tr style="text-align: left">
-      <td>Brand Design</td>
-    </tr>
-    <tr style="text-align: left">
-      <td>Marketing and Strategy</td>
-    </tr>
-  </table>
-</details></div></br>
+    <br>
+    <details style="text-align: center" id="Our_Profile">
+      <summary>TRAINING PROGRAMS</summary>
+      <table style="width:55%; margin-left: auto; margin-right: auto;">
+        <tr>
+          <th>
+            <h2>TRAINING PROGRAMS OFFERED BY SWATCH MEDIA</h2>
+          </th>
+        </tr>
+        <tr style="text-align: left">
+          <td>Web Development</td>
+        </tr>
+        <tr style="text-align: left">
+          <td>Graphic Design</td>
+        </tr>
+        <tr style="text-align: left">
+          <td>Brand Design</td>
+        </tr>
+        <tr style="text-align: left">
+          <td>Marketing and Strategy</td>
+        </tr>
+      </table>
+    </details>
+  </div></br>
 
-<!-- Contact -->
-<div class="w3-white" id="Contact">
-  <div class="w3-container w3-padding-32">
-    <div class="w3-center w3-padding-32">
-<h2 class="w3-wide">CONTACT US</h2>
- <p class="w3-opacity"><i>Book a session or just send us a message</i></p>
+  <!-- Contact -->
+  <div class="w3-white" id="Contact">
+    <div class="w3-container w3-padding-32">
+      <div class="w3-center w3-padding-32">
+        <h2 class="w3-wide">CONTACT US</h2>
+        <p class="w3-opacity"><i>Book a session or just send us a message</i></p>
 
       </div>
-<form action="send_email.php" method="post" target="_blank">
-<p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
-<p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
-<p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Describe Service" required name="Service"></p>
-<p><input class="w3-input w3-padding-16 w3-border" type="date" placeholder="Date and time" required name="date" id="date"></p>
-<p><textarea class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></textarea></p>
-<p><button type="submit" class="w3-button w3-round-xlarge w3-aqua w3-padding-large w3-large w3-hover-opacity-off">Submit</button></p>
-</form>
-</div>
-</div>
+      <form action="send_email.php" method="post" target="_blank">
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Describe Service" required
+            name="Service"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="date" placeholder="Date and time" required name="date"
+            id="date"></p>
+        <p><textarea class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required
+            name="Message"></textarea></p>
+        <p><button type="submit"
+            class="w3-button w3-round-xlarge w3-aqua w3-padding-large w3-large w3-hover-opacity-off">Submit</button></p>
+      </form>
+    </div>
+  </div>
 
   <!-- Footer section-->
   <footer class="w3-container w3-pale-blue w3-center w3-margin-top">
     <p>Find us on social media 👍 </p>
 
-        <div class="nfooter"> 
-            <a href="https://www.linkedin.com/in/swaleh-mwanza-939306101" aria-label="linkedin" rel="noopener" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a> &nbsp&nbsp
-            <a href="mailto:swalehmwanza@gmail.com"><i class="fa fa-envelope"> E-Mail</i></a> &nbsp&nbsp
-            <a href="tel:+254724500654"><i class="fa fa-phone-square">  +254724500654 </i></a>
-        </div>
-        
-              
+    <div class="nfooter">
+      <a href="https://www.linkedin.com/in/swaleh-mwanza-939306101" aria-label="linkedin" rel="noopener"
+        target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a> &nbsp&nbsp
+      <a href="mailto:swalehmwanza@gmail.com"><i class="fa fa-envelope"> E-Mail</i></a> &nbsp&nbsp
+      <a href="tel:+254724500654"><i class="fa fa-phone-square"> +254724500654 </i></a>
+    </div>
+
+
   </footer>
 
   <script>
-  if (history.scrollRestoration) {
-    history.scrollRestoration = 'manual';
-} else {
-    window.onload = function () {
+    if (history.scrollRestoration) {
+      history.scrollRestoration = 'manual';
+    } else {
+      window.onload = function () {
         window.scrollTo(0, 0);
+      }
     }
-}
 
-</script> 
+  </script>
 
-<script>
-  var today = new Date().toISOString().split('T')[0];
-  document.getElementById("date").setAttribute("min", today);
-</script>
+  <script>
+    var today = new Date().toISOString().split('T')[0];
+    document.getElementById("date").setAttribute("min", today);
+  </script>
 
- <!-- <script>
+  <!-- <script>
     mybutton = document.getElementById("myBtn");
 
 
@@ -274,20 +319,22 @@ function topFunction() {
 }
 </script> -->
 
-<script>
+  <script>
 
-const mybutton = document.getElementById("myBtn");
+    const mybutton = document.getElementById("myBtn");
 
-window.onscroll = () => {
-  mybutton.style.display = (document.documentElement.scrollTop > 20) ? "block" : "none";
-};
+    window.onscroll = () => {
+      mybutton.style.display = (document.documentElement.scrollTop > 20) ? "block" : "none";
+    };
 
-const topFunction = () => {
-  document.documentElement.scrollTop = 0;
-}
-</script>
+    const topFunction = () => {
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
 
-<p><button onclick="topFunction()" type="submit" id="myBtn" title="Go to top"><img src="images/up.svg" alt="top"width="18" height-="18"></button></p>
+  <p><button onclick="topFunction()" type="submit" id="myBtn" title="Go to top"><img src="images/up.svg" alt="top"
+        width="18" height-="18"></button></p>
 
 </body>
+
 </html>
