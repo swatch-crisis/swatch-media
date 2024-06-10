@@ -97,7 +97,23 @@
       padding: 10px;
       text-align: center;
     }
+
+  details>summary {
+  
+    list-style: none;
+  }
+  summary::-webkit-details-marker {
+    display: none
+  }
+  
+  summary::after {
+    content: ' 👇';
+  }
+  details[open] summary:after {
+    content: " ☝️";
+  }
   </style>
+
 </head>
 
 <body class="w3-light-white w3-margin">
@@ -273,7 +289,7 @@
 <!--SERVICES-->
   <br>
   <details id="Services">
-    <summary>SERVICES OFFERED</summary>
+    <summary><h2 class="w3-wide">SERVICES</h2></summary>
     <hr>
     <pre><p id="p1">Business Consultancy                                                       Build a business model to increase revenue and a clear client retention strategy</p></pre>                                                     
     <hr>
@@ -291,6 +307,7 @@
     <hr>
     <pre><p id="p1">PPC Advertising                                                            Target specific audiences with their messages and generate leads efficiently and effectively</p></pre>
     <hr>
+  </details>
       <!--<details style="text-align: center" id="Services">
       <summary>SERVICES OFFERED</summary>
       <table style="width:55%; margin-left: auto; margin-right: auto;">
@@ -311,9 +328,8 @@
         <tr style="text-align: left">
           <td>Marketing Strategy</td>
         </tr>
-      </table> -->
-    </details>
-  </br>
+      </table> 
+    </details>-->
 
   <!-- Contact -->
   <div class="w3-white" id="Contact">
