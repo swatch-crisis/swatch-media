@@ -7,343 +7,424 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="images/slogo2022.jpg">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
-    .button {
-      background-color: aqua;
-      border: none;
-      padding: 10px 10px;
-      text-align: center;
-      border-radius: 16px;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: default;
-      text-shadow: 1px 1px 1px #000;
-    }
-
-    html {
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
       scroll-behavior: smooth;
     }
 
-    h1 {
-      font-family: "Sans-serif"
-    }
-
-    h3,
-    h4,
-    h5 {
-      font-family: "Roboto";
-    }
-
-    h2 {
-      font-style: italic;
-      font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
-      font-weight: bolder;
-      display: block;
-    }
-
-    h6 {
-      font-family: "Sans-serif"
-    }
-
-    body {
-      font-family: "Source Sans Pro"
-    }
-
-    .myBtn {
-      display: none;
+    /* Navbar */
+    .navbar {
       position: fixed;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      background-color: aqua;
-      z-index: 99;
-      border: none;
-      outline: none;
-      padding: 10px;
-      border-radius: 16px;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 9999;
+      width: 100%;
+      height: 100px;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
-    .myBtn:hover {
-      background-color: #00ced1;
+    .navbar img {
+      width: 60px;
+      height: 60px;
     }
 
-    table,
-    th,
-    td {
-      border: 1px solid black;
+    .navbar h2 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: bold;
+      margin: 0;
+      color: #333;
     }
 
-    hr {
-      height: 3px;
-      border-width: 0;
-      background-color: #00FFFF;
+    .navbar a {
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+      margin-left: 20px;
     }
 
-    #p1 {
-      text-align: left;
+    .navbar .hamburger {
+      display: none;
+      font-size: 24px;
+      cursor: pointer;
     }
 
-    #Services {
-      padding: 10px;
+    /* Mobile Navbar */
+    .mobile-nav {
+      display: none;
+      flex-direction: column;
+      position: fixed;
+      top: 70px;
+      left: 0;
+      right: 0;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .mobile-nav a {
+      padding: 10px 20px;
+      border-bottom: 1px solid #eee;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: url('https://images.unsplash.com/photo-1587440871875-191322ee64b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80') no-repeat center center/cover;
+      height: 85vh;
       text-align: center;
+      position: relative;
+      margin-top: 70px;
     }
 
-    details>summary {
-      list-style: none;
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.753);
     }
 
-    summary::-webkit-details-marker {
-      display: none
+    header h1 {
+      font-size: 5rem;
+      font-weight: 300;
+      animation: fadeIn 2s;
+      z-index: 1;
+      position: relative;
+      color: #dadada;
     }
 
-    summary::after {
-      content: ' 👇';
-      font-size: 3rem;
+    header button {
+      background-color: #007BFF;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1rem;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      z-index: 1;
+      position: relative;
     }
 
-    details[open] summary:after {
-      content: " ☝️";
+    header button:hover {
+      background-color: #0056b3;
     }
-  </style>
-</head>
 
-<body class="w3-light-white w3-margin">
-  <!-- Navigation bar with links -->
-  <div id="navbar" class="fixed-navbar w3-bar w3-white w3-text-black" style="position: fixed; top: 0; left: 0; right: 0; z-index: 9999; width: 100%; height: 65px;">
-    <img src="images/slogo2022.jpg" class="w3-left" alt="Swatch Media Logo" width="60" height="60">
-    <h2 class="w3-left w3-tag w3-white w3-round w3-black">SWATCH MEDIA</h2>
-    <a href="#Contact" class="w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right" style="margin-top:10px;">CONTACT US</a>
-    <a href="#Services" class="w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right" style="margin-top:10px;">SERVICES</a>
-    <a href="#Portfolio" class="w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right" style="margin-top:10px;">PORTFOLIO</a>
-    <a href="#Home" class="w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right" style="margin-top:10px;">HOME</a>
-    <a href="hamburger" class="w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large" style="margin-top:10px;" onclick="myFunction()">&#9939</a>
-  </div>
+    header button a {
+      color: white;
+      text-decoration: none;
+    }
 
-  <!-- Bar mobile view-->
-  <div id="hamburger" class="w3-bar-block w3-white w3-hide w3-hide-large w3-small">
-    <a href="#Home" class="w3-bar-item w3-button">HOME</a>
-    <a href="#Portfolio" class="w3-bar-item w3-button">PORTFOLIO</a>
-    <a href="#Services" class="w3-bar-item w3-button">SERVICES</a>
-    <a href="#Contact" class="w3-bar-item w3-button">CONTACT US</a>
-  </div>
+    /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
 
-  <div class="w3-content" style="max-width:1600px">
-    <!-- Image header -->
-    <header class="w3-display-container w3-wide" style="padding-bottom:0px; margin-top: 0px" id="Home">
-      <img class="w3-image" src="https://images.unsplash.com/photo-1587440871875-191322ee64b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80" alt="Photo by Jamie Street" width="1600" height="400">
-      <div class="w3-display-left w3-padding-small">
-        <h1 class="w3-text-black">IT STARTED WITH GRAPHICS</h1>
-        <h1 class="w3-jumbo w3-hover-text-black w3-hide-small "><b>BRANDING AS A PASSION</b></h1>
-        <h6><button class="w3-button w3-round-xlarge w3-aqua w3-padding-large w3-hover-opacity-off"><a href="#Contact" style="text-decoration: none">BOOK A SESSION</a></button></h6>
-      </div>
-    </header>
-
-    <!-- Portfolio section -->
-    <div class="w3-row-padding" id="Portfolio">
-      <div class="w3-center w3-padding-32">
-        <h2 class="w3-wide w3-center">PORTFOLIO</h2>
-        <p class="w3-opacity w3-center"><i>Previous Works</i></p><br>
-        <p class="w3-white w3-text-black w3-center-align">
-          Swatch Media started as a graphics and web design company keen on offering professional online presence. We
-          resorted to also provide offline presence. Our main focus is Branding, Marketing and Business Consultancy. Our
-          team is filled with
-          passion and we pursue every project with the relevant expertise.
-          We work with both companies and individuals particularly start ups who strive to build and expose their brand.
-          We are a highly driven, creative and result oriented team with the ability to prioritize and set directon in a
-          fast-paced environment.
-          Our goal is to capture the needs and wants of the very fast growing economy inorder to realise the
-          expectations of our current and future clients.
-        <p>
-          <c>Previous Projects:</c>
-        </p>
-        </p>
-      </div>
-
-      <div class="w3-third w3-margin-bottom">
-        <div class="w3-card-4">
-          <img src="images/heb.png" alt="heb" style="width:100%">
-          <div class="w3-container">
-            <h3>Brand Design</h3>
-            <p class="w3-opacity">HEB ENTERPRISES</p>
-            <p>Our team did a complete rebrand of this organisation. From the logo, colors, typography and photography
-              to all other related visual assets </p>
-            <p><a href="#Contact" style="text-decoration: none">
-                <button class="w3-button w3-round-xlarge w3-aqua w3-block">VIEW PROJECT</button></a></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="w3-third w3-margin-bottom">
-        <div class="w3-card-4">
-          <img src="images/hbb.png" alt="Heavenly BB" style="width:100%">
-          <div class="w3-container">
-            <h3>Digital Marketing</h3>
-            <p class="w3-opacity">HEAVENLY BB</p>
-            <p>Our team did the complete digital marketing strategy, graphic design, influencer marketing, video and
-              photography coverage </p>
-            <p><a href="#Contact" style="text-decoration: none">
-                <button class="w3-button w3-round-xlarge w3-aqua w3-block">VIEW PROJECT</button></a></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="w3-third w3-margin-bottom">
-        <div class="w3-card-4">
-          <img src="images/makumbi.jpeg" alt="Makumbi" style="width:100%">
-          <div class="w3-container">
-            <h3>Marketing Strategy</h3>
-            <p class="w3-opacity">MAKUMBI & BROS</p>
-            <p>We offered business consultancy services and came up with an efficient marketing strategy.</p>
-            <p><a href="#Contact" style="text-decoration: none">
-                <button class="w3-button w3-round-xlarge w3-aqua w3-block">VIEW PROJECT</button></a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Services section -->
-    <div class="w3-container" id="Services">
-      <h1 class="w3-wide w3-center">SERVICES</h1>
-      <p class="w3-opacity w3-center"><i>We offer the following services</i></p><br>
-
-      <div class="w3-row-padding w3-center" style="margin-top:64px">
-        <div class="w3-third">
-          <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
-          <p class="w3-large">Website Design</p>
-          <p>With skilled experts in HTML, CSS and Javascript frameworks, we are able to create the best possible web
-            pages for your business.</p>
-        </div>
-        <div class="w3-third">
-          <i class="fa fa-tasks w3-margin-bottom w3-jumbo"></i>
-          <p class="w3-large">Brand Design</p>
-          <p>We design and manage all visual content from the logo, colors, typography, photography, videos and any
-            other visual assets.</p>
-        </div>
-        <div class="w3-third">
-          <i class="fa fa-lightbulb-o w3-margin-bottom w3-jumbo"></i>
-          <p class="w3-large">Business Consultancy</p>
-          <p>Our team offers expert advice in marketing strategy, business operations, resource management and
-            e-commerce. </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Contact section -->
-    <div class="w3-container w3-padding-large w3-grey" id="Contact">
-      <h4><b>Contact Us</b></h4>
-      <div id="form-messages"></div>
-      <form id="contact-form" action="" method="POST">
-        <div class="w3-section">
-          <label>Name</label>
-          <input class="w3-input w3-border" type="text" name="user_name" required>
-        </div>
-        <div class="w3-section">
-          <label>Email</label>
-          <input class="w3-input w3-border" type="email" name="user_email" required>
-        </div>
-        <div class="w3-section">
-          <label>Message</label>
-          <textarea class="w3-input w3-border" name="message" required></textarea>
-        </div>
-        <button type="submit" class="w3-button w3-round-xlarge w3-aqua w3-right">Send</button>
-      </form>
-    </div>
-
-    <div class="w3-container">
-      <h3>About Us, The Team</h3>
-      <p>Our team consists of passionate designers, developers, and business consultants who are committed to delivering
-        outstanding results.</p>
-    </div>
-
-    <!-- Add Google Maps -->
-    <div class="w3-container w3-padding-32 w3-center" id="googleMap" style="height:400px;">
-      <h3>Our Location</h3>
-      <div class="mapouter">
-        <div class="gmap_canvas">
-          <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=your%20location%20here&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-        </div>
-        <style>
-          .mapouter {
-            position: relative;
-            text-align: right;
-            height: 500px;
-            width: 600px;
-          }
-
-          .gmap_canvas {
-            overflow: hidden;
-            background: none !important;
-            height: 500px;
-            width: 600px;
-          }
-        </style>
-      </div>
-    </div>
-  </div>
-
-  <!-- Back to top button -->
-  <button onclick="topFunction()" id="myBtn" class="myBtn" title="Go to top">Top</button>
-
-  <!-- Include EmailJS script -->
-  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  <script type="text/javascript">
-    // Initialize EmailJS with your user ID
-    emailjs.init('your-user-ID');
-
-    // Get the form and the messages div
-    const contactForm = document.getElementById('contact-form');
-    const formMessages = document.getElementById('form-messages');
-
-    // Add an event listener for the form submission
-    contactForm.addEventListener('submit', function (event) {
-      event.preventDefault(); // Prevent the default form submission
-
-      // Send the form data using EmailJS
-      emailjs.sendForm('service_vbc6om2', 'template_0ltlxcv', this)
-        .then(function (response) {
-          console.log('SUCCESS!', response.status, response.text);
-          formMessages.innerHTML = '<p>Thank you! Your message has been sent successfully.</p>';
-          formMessages.style.color = 'green';
-          contactForm.reset(); // Reset the form fields
-        }, function (error) {
-          console.log('FAILED...', error);
-          formMessages.innerHTML = '<p>Oops! Something went wrong, please try again.</p>';
-          formMessages.style.color = 'red';
-        });
-    });
-
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function () { scrollFunction() };
-
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
-      } else {
-        document.getElementById("myBtn").style.display = "none";
+      to {
+        opacity: 1;
       }
     }
 
-    // When the user clicks on the button, scroll to the top of the document
+    /* Sections */
+    section {
+      padding: 60px 20px;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 40px;
+      text-transform: capitalize;
+    }
+
+    .portfolio,
+    .services {
+      text-align: center;
+    }
+
+    .portfolio .content,
+    .services .content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+    }
+
+    .portfolio img,
+    .services i {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .portfolio .card,
+    .services .card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      transition: transform 0.3s;
+    }
+
+    .portfolio .card:hover,
+    .services .card:hover {
+      transform: translateY(-10px);
+    }
+
+    /* Contact Section */
+    .contact {
+      background-color: #f1f1f1;
+      padding: 60px 20px;
+    }
+
+    .contact form {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .contact form .w3-input {
+      margin-bottom: 15px;
+      background-color: #fff;
+      color: #333;
+      border: 1px solid #ccc;
+    }
+
+    .contact form input[type="submit"] {
+      background-color: #007BFF;
+      border: none;
+      padding: 15px;
+      border-radius: 25px;
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.3s;
+    }
+
+    .contact form input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    /* Google Map */
+    .map {
+      height: 400px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #fff;
+      color: #333;
+    }
+
+    /* Back to Top Button */
+    .back-to-top {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #007BFF;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 24px;
+      color: white;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .back-to-top:hover {
+      background-color: #0056b3;
+      transform: scale(1.1);
+    }
+
+    @media (max-width: 768px) {
+      .navbar .hamburger {
+        display: block;
+      }
+
+      .navbar a {
+        display: none;
+      }
+
+      .mobile-nav {
+        display: flex;
+      }
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "_Q9PSvGMbLPdGDnqv",
+      });
+    })();
+  </script>
+  <script type="text/javascript">
+    window.onload = function () {
+      document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        emailjs.sendForm('gmail_service', 'contact_form', '#contact-form', this)
+          .then(() => {
+            alert('✨Message sent successfully')
+            window.location.reload();
+            console.log('SUCCESS!');
+          }, (error) => {
+            alert('⚠️Message failed to be sent. Kindly try again.')
+            console.log('FAILED...', error);
+          });
+      });
+    }
+
+    function toggleMenu() {
+      var x = document.getElementById("mobileNav");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("backToTop").style.display = "block";
+      } else {
+        document.getElementById("backToTop").style.display = "none";
+      }
+    }
+
     function topFunction() {
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
+  </script>
+</head>
 
-    // Toggle the display of the mobile navigation menu
-    function myFunction() {
-      var x = document.getElementById("hamburger");
-      if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-      } else {
-        x.className = x.className.replace(" w3-show", "");
-      }
+<body>
+
+  <!-- Navigation bar -->
+  <div class="navbar">
+    <div style="display: flex; align-items: center;">
+      <img src="images/slogo2022.jpg" alt="Logo">
+      <h2>Swatch Media</h2>
+    </div>
+    <div style="display: flex; align-items: center;">
+      <a href="#Home">Home</a>
+      <a href="#Portfolio">Portfolio</a>
+      <a href="#Services">Services</a>
+      <a href="#Contact">Contact Us</a>
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fa fa-bars"></i>
+      </div>
+    </div>
+  </div>
+
+  <div id="mobileNav" class="mobile-nav">
+    <a href="#Home" onclick="toggleMenu()">Home</a>
+    <a href="#Portfolio" onclick="toggleMenu()">Portfolio</a>
+    <a href="#Services" onclick="toggleMenu()">Services</a>
+    <a href="#Contact" onclick="toggleMenu()">Contact Us</a>
+  </div>
+
+  <!-- Header Section -->
+  <header>
+    <div>
+      <h1>Welcome To Swatch Media</h1>
+      <button><a href="#Portfolio">View More</a></button>
+    </div>
+  </header>
+
+  <!-- Portfolio Section -->
+  <section id="Portfolio" class="portfolio">
+    <h2 class="section-title">Portfolio</h2>
+    <div class="content">
+      <div class="card"><img src="images/1.jpg" alt="Image 1"></div>
+      <div class="card"><img src="images/2.jpg" alt="Image 2"></div>
+      <div class="card"><img src="images/3.jpg" alt="Image 3"></div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="Services" class="services">
+    <h2 class="section-title">Services</h2>
+    <div class="content">
+      <div class="card">
+        <i class="fa fa-photo" style="font-size:48px;"></i>
+        <h3>Photography</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a tempor risus. Quisque at turpis urna.</p>
+      </div>
+      <div class="card">
+        <i class="fa fa-video-camera" style="font-size:48px;"></i>
+        <h3>Videography</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a tempor risus. Quisque at turpis urna.</p>
+      </div>
+      <div class="card">
+        <i class="fa fa-laptop" style="font-size:48px;"></i>
+        <h3>Web Development</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a tempor risus. Quisque at turpis urna.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="Contact" class="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <form id="contact-form" method="post">
+      <div class="w3-section">
+        <label for="name">Name</label>
+        <input class="w3-input" type="text" id="name" name="user_name" required>
+      </div>
+      <div class="w3-section">
+        <label for="email">Email</label>
+        <input class="w3-input" type="email" id="email" name="user_email" required>
+      </div>
+      <div class="w3-section">
+        <label for="message">Message</label>
+        <textarea class="w3-input" id="message" name="message" required></textarea>
+      </div>
+      <input type="submit" value="Send">
+    </form>
+  </section>
+
+  <!-- Google Map -->
+  <div id="googleMap" class="map"></div>
+  <script>
+    function myMap() {
+      var mapProp = {
+        center: new google.maps.LatLng(51.508742, -0.120850),
+        zoom: 5,
+      };
+      var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
     }
   </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
+  <!-- Back to Top Button -->
+  <button onclick="topFunction()" id="backToTop" class="back-to-top">&#8679;</button>
+
+  <!-- Footer -->
+  <footer>
+    <p>Swatch Media &copy; 2023. All Rights Reserved.</p>
+  </footer>
 </body>
 
 </html>
