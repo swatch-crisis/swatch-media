@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 25,
+            "activePatchIndex": 26,
             "patches": [
                 {
                     "date": 1718543110408,
@@ -108,6 +108,10 @@
                 {
                     "date": 1718717396756,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n       scroll-behavior: smooth;\n     }\n \n     h1 {\n-      font-family: 'Cambria', 'Cochin', 'Georgia', 'Times New Roman', 'Times', 'serif';\n+      font-family: 'Trebuchet MS','Cambria', 'Cochin', 'Georgia', 'Times New Roman', 'Times', 'serif';\n     }\n \n     h3,\n     h4,\n"
+                },
+                {
+                    "date": 1718717570151,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -347,9 +347,9 @@\n       }\n     }\n \n   </script>\n-\n+<!--The date is set to the current date-->\n   <script>\n     var today = new Date().toISOString().split('T')[0];\n     document.getElementById(\"date\").setAttribute(\"min\", today);\n   </script>\n"
                 }
             ],
             "date": 1718543110408,
