@@ -138,4 +138,14 @@ body {
   padding: 16px;
   text-align: center;
   background-color: #fff;
+  height: 20rem;
+
+}
+
+.w3-card-4 {
+    height: 33rem;
+}
+
+#hamburger {
+    margin-top: 7vh;
 }

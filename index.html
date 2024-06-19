@@ -37,8 +37,7 @@
       style="margin-top:10px;">PORTFOLIO</a>
     <a href="#Home" class="w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right"
       style="margin-top:10px;">HOME</a>
-    <a href="hamburger" class="w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large" style="margin-top:10px;"
-      onclick="myFunction()">&#9939</a>
+      <a class="w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large" style="margin-top:10px;" onclick="toggleMenu()">&#9776;</a>
   </div>
 
   <!-- Bar mobile view-->
@@ -350,6 +349,17 @@
       document.documentElement.scrollTop = 0;
     }
 
+  </script>
+
+<script>
+  function toggleMenu() {
+      var x = document.getElementById("hamburger");
+      if (x.classList.contains("w3-hide")) {
+          x.classList.remove("w3-hide");
+      } else {
+          x.classList.add("w3-hide");
+      }
+  }
   </script>
 
   <!--scroll button-->

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 188,
+            "activePatchIndex": 190,
             "patches": [
                 {
                     "date": 1718543110408,
@@ -760,6 +760,14 @@
                 {
                     "date": 1718804372188,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,11 +9,11 @@\n   <link rel=\"stylesheet\" href=\"https://www.w3schools.com/w3css/4/w3.css\">\n   <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Roboto\">\n   <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro\">\n   <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">\n-  <link rel=\"stylesheet\" href=\"styles.css\">\n+  <link rel=\"stylesheet\" href=\"style.css\">\n  \n-  \n+\n   <!-- Include EmailJS script -->\n   <script type=\"text/javascript\" src=\"https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js\"></script>\n   <script type=\"text/javascript\">\n     (function () {\n"
+                },
+                {
+                    "date": 1718813179050,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n     <a href=\"#Portfolio\" class=\"w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right\"\n       style=\"margin-top:10px;\">PORTFOLIO</a>\n     <a href=\"#Home\" class=\"w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right\"\n       style=\"margin-top:10px;\">HOME</a>\n-    <a href=\"hamburger\" class=\"w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large\" style=\"margin-top:10px;\"\n+    <a class=\"w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large\" style=\"margin-top:10px;\"\n       onclick=\"myFunction()\">&#9939</a>\n   </div>\n \n   <!-- Bar mobile view-->\n"
+                },
+                {
+                    "date": 1718814127127,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,10 +36,9 @@\n     <a href=\"#Portfolio\" class=\"w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right\"\n       style=\"margin-top:10px;\">PORTFOLIO</a>\n     <a href=\"#Home\" class=\"w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right\"\n       style=\"margin-top:10px;\">HOME</a>\n-    <a class=\"w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large\" style=\"margin-top:10px;\"\n-      onclick=\"myFunction()\">&#9939</a>\n+      <a class=\"w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large\" style=\"margin-top:10px;\" onclick=\"toggleMenu()\">&#9776;</a>\n   </div>\n \n   <!-- Bar mobile view-->\n   <div id=\"hamburger\" class=\"w3-bar-block w3-white w3-hide w3-hide-large w3-small\">\n@@ -351,8 +350,19 @@\n     }\n \n   </script>\n \n+<script>\n+  function toggleMenu() {\n+      var x = document.getElementById(\"hamburger\");\n+      if (x.classList.contains(\"w3-hide\")) {\n+          x.classList.remove(\"w3-hide\");\n+      } else {\n+          x.classList.add(\"w3-hide\");\n+      }\n+  }\n+  </script>\n+\n   <!--scroll button-->\n   <br><button onclick=\"topFunction()\" type=\"submit\" id=\"myBtn\" title=\"Go to top\"><img src=\"images/up.svg\" alt=\"top\" width=\"18\" height-=\"18\"></button>\n \n </body>\n"
                 }
             ],
             "date": 1718543110408,
