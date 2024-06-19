@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 96,
+            "activePatchIndex": 97,
             "patches": [
                 {
                     "date": 1718543110408,
@@ -392,6 +392,10 @@
                 {
                     "date": 1718781851567,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -188,9 +188,9 @@\n         src=\"https://images.unsplash.com/photo-1587440871875-191322ee64b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80\"\n         alt=\"Photo by Jamie Street\" width=\"1600\" height=\"400\">\n       <div class=\"w3-display-left w3-padding-small\">\n         <h1 class=\"w3-text-black\">IT STARTS WITH US</h1>\n-        <h1 class=\"w3-jumbo w3-hover-text-black w3-hide-small \"><b>BUSINESS & BRANDING</b></h1>\n+        <h1 class=\"w3-jumbo w3-hover-text-black\"><b>BUSINESS & BRANDING</b></h1>\n         <h6><button class=\"w3-button w3-round-xlarge w3-aqua w3-padding-large w3-hover-opacity-off\"><a href=\"#contact_form\"\n               style=\"text-decoration: none\">BOOK A SESSION</a></button></h6>\n       </div>\n     </header>\n"
+                },
+                {
+                    "date": 1718781933951,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -188,9 +188,9 @@\n         src=\"https://images.unsplash.com/photo-1587440871875-191322ee64b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80\"\n         alt=\"Photo by Jamie Street\" width=\"1600\" height=\"400\">\n       <div class=\"w3-display-left w3-padding-small\">\n         <h1 class=\"w3-text-black\">IT STARTS WITH US</h1>\n-        <h1 class=\"w3-jumbo w3-hover-text-black\"><b>BUSINESS & BRANDING</b></h1>\n+        <h1 class=\"w3-jumbo w3-hover-text-black w3-hide-small \"><b>BUSINESS & BRANDING</b></h1>\n         <h6><button class=\"w3-button w3-round-xlarge w3-aqua w3-padding-large w3-hover-opacity-off\"><a href=\"#contact_form\"\n               style=\"text-decoration: none\">BOOK A SESSION</a></button></h6>\n       </div>\n     </header>\n"
                 }
             ],
             "date": 1718543110408,
