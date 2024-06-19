@@ -438,6 +438,7 @@ body {
     document.getElementById("date").setAttribute("min", today);
   </script>
   
+  <!--EmailJs-->
   <script type="text/javascript">
     document.getElementById('contact-form').addEventListener('submit', function(event) {
       event.preventDefault();
@@ -449,7 +450,7 @@ body {
           window.location.reload();
         }, function(error) {
           console.log('FAILED...', error);
-          alert('⚠️Failed to send the message, please try again later.');
+          alert('⚠️Failed to send the message, please try again later!');
         });
     });
   </script>
