@@ -446,6 +446,7 @@ body {
         .then(function(response) {
           console.log('SUCCESS!', response.status, response.text);
           alert('✨Your message has been sent successfully!');
+          window.location.reload();
         }, function(error) {
           console.log('FAILED...', error);
           alert('⚠️Failed to send the message, please try again later.');
