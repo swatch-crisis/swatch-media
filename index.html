@@ -422,6 +422,12 @@ body {
     </div>
   </div>
 
+  <!--The date is set to the current date-->
+  <script>
+    var today = new Date().toISOString().split('T')[0];
+    document.getElementById("date").setAttribute("min", today);
+  </script>
+
   <!-- Include EmailJS script -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script type="text/javascript">
@@ -433,9 +439,9 @@ body {
   </script>
   <script type="text/javascript">
     window.onload = function () {
-      document.getElementById('contact_form').addEventListener('submit', function (event) {
+      document.getElementById('contact-form').addEventListener('submit', function (event) {
         event.preventDefault();
-        emailjs.sendForm('gmail_service', 'contact_form', '#contact_form', this)
+        emailjs.sendForm('gmail_service', 'contact_form', '#contact-form', this)
           .then(() => {
             alert('✨Message sent successfully')
             window.location.reload();
@@ -448,7 +454,20 @@ body {
     }
 
   </script>  
-<!--scroll restoration-->
+
+  <!-- Footer section-->
+  <footer class="w3-container w3-pale-blue w3-center w3-margin-top">
+    <p>Find us on social media 👍 </p>
+
+        <div class="nfooter"> 
+            <a href="https://www.linkedin.com/in/swaleh-mwanza-939306101" aria-label="linkedin" rel="noopener" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a> &nbsp&nbsp;
+            <a href="mailto:swalehmwanza@gmail.com"><i class="fa fa-envelope"> E-Mail</i></a> &nbsp&nbsp;
+            <a href="tel:+254724500654"><i class="fa fa-phone-square">  +254724500654 </i></a>
+        </div>
+                    
+  </footer>
+
+  <!--scroll restoration on reload-->
   <script>
     if (history.scrollRestoration) {
       history.scrollRestoration = 'manual';
@@ -459,14 +478,8 @@ body {
     }
 
   </script>
-
-<!--The date is set to the current date-->
-  <script>
-    var today = new Date().toISOString().split('T')[0];
-    document.getElementById("date").setAttribute("min", today);
-  </script>
-
-
+  
+  <!--scroll restoration on click-->
   <script>
 
     const mybutton = document.getElementById("myBtn");
@@ -478,22 +491,11 @@ body {
     const topFunction = () => {
       document.documentElement.scrollTop = 0;
     }
+
   </script>
 
-  <!-- Footer section-->
-  <footer class="w3-container w3-pale-blue w3-center w3-margin-top">
-    <p>Find us on social media 👍 </p>
-
-        <div class="nfooter"> 
-            <a href="https://www.linkedin.com/in/swaleh-mwanza-939306101" aria-label="linkedin" rel="noopener" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a> &nbsp&nbsp;
-            <a href="mailto:swalehmwanza@gmail.com"><i class="fa fa-envelope"> E-Mail</i></a> &nbsp&nbsp;
-            <a href="tel:+254724500654"><i class="fa fa-phone-square">  +254724500654 </i></a>
-        </div>
-        
-              
-  </footer>
-  
-  <p><button onclick="topFunction()" type="submit" id="myBtn" title="Go to top"><img src="images/up.svg" alt="top" width="18" height-="18"></button></p>
+  <!--scroll button-->
+  <br><button onclick="topFunction()" type="submit" id="myBtn" title="Go to top"><img src="images/up.svg" alt="top" width="18" height-="18"></button>
 
 </body>
 
