@@ -90,7 +90,6 @@
 
     #Services {
       padding: 10px;
-      text-align: center;
     }
 
     details>summary {
@@ -104,11 +103,54 @@
     summary::after {
       content: ' 👇';
       font-size: 3rem;
+      
     }
 
     details[open] summary:after {
       content: " ☝️";
     }
+
+    * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
   </style>
 </head>
 
@@ -178,10 +220,8 @@
           <div class="w3-container">
             <h3>Brand Design</h3>
             <p class="w3-opacity">HEB ENTERPRISES</p>
-            <p>Our team did a complete rebrand of this organisation. From the logo, colors, typography and photography
-              to all other related visual assets </p>
-            <p><a href="#contact_form" style="text-decoration: none">
-                  <button class="w3-button w3-round-xlarge w3-aqua w3-block">VIEW PROJECT</button></a></p>
+            <p>A complete rebrand of this organisation. From the logo, theme, colors, typography and photography and all other related visual assets </p>
+            <p><a href="#contact_form" style="text-decoration: none"><button class="w3-button w3-round-xlarge w3-aqua w3-block">VIEW PROJECT</button></a></p>
           </div>
         </div>
       </div>
@@ -192,10 +232,8 @@
           <div class="w3-container">
             <h3>Graphics</h3>
             <p class="w3-opacity">BRYSHI SERVICES LIMITED</p>
-            <p>Our team went all in on this project. This client wanted a logo that would speak for itself and we
-              delivered. It is what we do best. Bold and precise </p>
-            <p><a href="https://www.behance.net/gallery/159637535/BRYSHI-SERVICES-LIMITED" target="_blank" style="text-decoration: none">
-              <button class="w3-button w3-round-xlarge w3-aqua w3-block">VIEW PROJECT</button></a></p>
+            <p>Our team went all in on this project. This client wanted a logo that would speak for itself and we delivered. It is what we do best. Bold and precise </p>
+            <p><a href="https://www.behance.net/gallery/159637535/BRYSHI-SERVICES-LIMITED" target="_blank" style="text-decoration: none"> <button class="w3-button w3-round-xlarge w3-aqua w3-block">VIEW PROJECT</button></a></p>
           </div>
         </div>
       </div>
@@ -206,10 +244,8 @@
           <div class="w3-container">
             <h3>Web Design</h3>
             <p class="w3-opacity">AQILA SOFTWARE LIMITED</p>
-            <p>We did a complete brand development project with Aqila. A highly technical client but we delivered a
-              masterpiece in every aspect we worked on. </p>
-            <p><a href="https://aqila.co.ke/" target="_blank" style="text-decoration: none"> 
-              <button class="w3-button w3-round-xlarge w3-aqua w3-block"> VIEW PROJECT</button></a></p>
+            <p>A complete brand development project with Aqila. A highly technical client but we delivered a masterpiece in every aspect we worked on. </p>
+            <p><a href="https://aqila.co.ke/" target="_blank" style="text-decoration: none"> <button class="w3-button w3-round-xlarge w3-aqua w3-block"> VIEW PROJECT</button></a></p>
           </div>
         </div>
       </div>
@@ -226,8 +262,7 @@
             <h3>UI/UX Design</h3>
             <p class="w3-opacity">MBIUFUN GAMING</p>
             <p>A rebrand episode giving it a new and fresh look. The engagements increased with an upgrade in the user experience and an increase in functionalities.</p>
-            <p><a href="https://www.behance.net/gallery/200472379/Mbiu-Social-App" target="_blank" style="text-decoration: none">
-              <button class="w3-button w3-round-xlarge w3-aqua w3-block">VIEW PROJECT</button></a></p>
+            <p><a href="https://www.behance.net/gallery/200472379/Mbiu-Social-App" target="_blank" style="text-decoration: none"> <button class="w3-button w3-round-xlarge w3-aqua w3-block">VIEW PROJECT</button></a></p>
           </div>
         </div>
       </div>
@@ -239,8 +274,7 @@
             <h3>UI Design</h3>
             <p class="w3-opacity">ETHOS MOBIILE WALLET</p>
             <p>A wallet project that required a lot of research to implement the design but our over-qualified team hacked it. Incorporated next generation designs.</p>
-            <p><a href="https://www.behance.net/gallery/200472195/Ethos-Mobile-Wallet" target="_blank" style="text-decoration: none">
-              <button class="w3-button w3-round-xlarge w3-aqua w3-block">VIEW PROJECT</button></a></p>
+            <p><a href="https://www.behance.net/gallery/200472195/Ethos-Mobile-Wallet" target="_blank" style="text-decoration: none"> <button class="w3-button w3-round-xlarge w3-aqua w3-block">VIEW PROJECT</button></a></p>
           </div>
         </div>
       </div>
@@ -251,10 +285,8 @@
           <div class="w3-container">
             <h3>Web Design</h3>
             <p class="w3-opacity">ATHENE RESEARCH GROUP</p>
-         <!--   <p>With an existing theme it was upto our exceptional team to come up with the designs which perfectly speak to the capacity of the client. </p> -->
-            <p>Utilising the existing theme, the Athene Research website is modelled to display in detail its origin and its purpose while maintaining a rich look. </p>
-            <p><a href="https://atheneresearch.com/" target="_blank" style="text-decoration: none"> 
-              <button class="w3-button w3-round-xlarge w3-aqua w3-block"> VIEW PROJECT</button></a></p>
+            <p>Utilising an existing theme, the Athene Research website is modelled to exhibit in detail its origin and its purpose while maintaining a steady and rich look. </p>
+            <p><a href="https://atheneresearch.com/" target="_blank" style="text-decoration: none"> <button class="w3-button w3-round-xlarge w3-aqua w3-block"> VIEW PROJECT</button></a></p>
           </div>
         </div>
       </div>
@@ -262,12 +294,12 @@
    
    
    
-    
+  
     <!--SERVICES-->
-  <br>
-  <details id="Services">
+    <details>
+    <br>
     <summary><h2 class="w3-wide">SERVICES</h2></summary>
-    <hr>
+    <!--<hr>
     <pre><p id="p1">Business Consultancy                                                       Build a business model to increase revenue and a clear client retention strategy</p></pre>                                                     
     <hr>
     <pre><p id="p1">Marketing Design                                                           Learn how to communicate with your clientele through design and capture their attention </p></pre>
@@ -284,10 +316,99 @@
     <hr>
     <pre><p id="p1">PPC Advertising                                                            Target specific audiences with their messages and generate leads efficiently and effectively</p></pre>
     <hr>
-  </details>
+  -->
+
+<!--column cards for the services-->
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <span>
+        <img class="img-responsive" src="images/businessconsulting.svg" alt="bcon">
+      </span>
+      <h3>Business Consultancy</h3>
+      <p>Build a business model to increase revenue and a clear client retention strategy</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <span>
+        <img class="img-responsive" src="images/marketingdesign.png" alt="md">
+      </span>
+      <h3>Marketing Design</h3>
+      <p>Learn how to communicate with your clientele through design and capture their attention</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <span>
+        <img class="img-responsive" src="images/brandidentity.png" alt="bi">
+      </span>
+      <h3>Brand Identity</h3>
+      <p>Build your brand from scratch and let it stand out from the competition</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <span>
+        <img class="img-responsive" src="images/marketingstrategy.png" alt="ms">
+      </span>
+      <h3>Marketing Strategy</h3>
+      <p>Understand the needs of the customer and create a distinct and sustainable competitive advantage</p>
+    </div>
+  </div>
+</div>
+
+<!--column cards for the services2-->
+<p>
+</p><div class="row">
+  <div class="column">
+    <div class="card">
+      <span>
+        <img class="img-responsive" src="images/sp.png" alt="sp">
+      </span>
+      <h3>Strategic Planning and Consultation</h3>
+      <p>Establish clear objectives, assess your SWOT, and formulate a strategic POA to achieve those goals.</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <span>
+        <img class="img-responsive" src="images/socialmedia.png" alt="smedia">
+      </span>
+      <h3>Social Media Marketing</h3>
+      <p>Utilize the power of social media platforms to promote brands, products, and services</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <span>
+        <img class="img-responsive" src="images/seo.png" alt="seo">
+      </span>
+      <h3>Search Engine Optimization</h3>
+      <p>Enhance online visibility through the implementation of diverse techniques and strategies</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <span>
+        <img class="img-responsive" src="images/ppc.png" alt="ppc">
+      </span>
+      <h3>Pay-per-click(PPC) Advertising</h3>
+      <p>Target specific audiences with their messages and generate leads efficiently and effectively</p>
+    </div>
+  </div>
+</div>
+</p>
 </br>
-  
-  
+</details>
+
+
   <!-- Contact -->
   <div class="w3-white" id="contact_form">
     <div class="w3-container w3-padding-32">
@@ -299,14 +420,10 @@
       <form= target="_blank">
         <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="from_name"></p>
         <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="from_email"></p>
-        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Describe Service" required
-            name="service"></p>
-        <p><input class="w3-input w3-padding-16 w3-border" type="date" placeholder="Date and time" required name="date"
-            id="date"></p>
-        <p><textarea class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required
-            name="message"></textarea></p>
-        <p><button type="submit"
-            class="w3-button w3-round-xlarge w3-aqua w3-padding-large w3-large w3-hover-opacity-off">Submit</button></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Describe Service" required name="service"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="date" placeholder="Date and time" required name="date" id="date"></p>
+        <p><textarea class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="message"></textarea></p>
+        <p><button type="submit" class="w3-button w3-round-xlarge w3-aqua w3-padding-large w3-large w3-hover-opacity-off">Submit</button></p>
       </form>
     </div>
   </div>
