@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 4,
+            "activePatchIndex": 9,
             "patches": [
                 {
                     "date": 1718804050870,
@@ -24,6 +24,26 @@
                 {
                     "date": 1718814266214,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -143,5 +143,9 @@\n }\n \n .w3-card-4 {\n     height: 33rem;\n+}\n+\n+#hamburger {\n+    margin-top: 7vh;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1718822862760,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -142,9 +142,9 @@\n \n }\n \n .w3-card-4 {\n-    height: 33rem;\n+    height: 45rem;\n }\n \n #hamburger {\n     margin-top: 7vh;\n"
+                },
+                {
+                    "date": 1718822874890,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -142,9 +142,9 @@\n \n }\n \n .w3-card-4 {\n-    height: 45rem;\n+    height: 30rem;\n }\n \n #hamburger {\n     margin-top: 7vh;\n"
+                },
+                {
+                    "date": 1718822884977,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -142,9 +142,9 @@\n \n }\n \n .w3-card-4 {\n-    height: 30rem;\n+    height: 35rem;\n }\n \n #hamburger {\n     margin-top: 7vh;\n"
+                },
+                {
+                    "date": 1718822893896,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -142,9 +142,9 @@\n \n }\n \n .w3-card-4 {\n-    height: 35rem;\n+    height: 38rem;\n }\n \n #hamburger {\n     margin-top: 7vh;\n"
+                },
+                {
+                    "date": 1718822910076,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -142,9 +142,9 @@\n \n }\n \n .w3-card-4 {\n-    height: 38rem;\n+    height: 40rem;\n }\n \n #hamburger {\n     margin-top: 7vh;\n"
                 }
             ],
             "date": 1718804050870,
