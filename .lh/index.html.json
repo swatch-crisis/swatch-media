@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 184,
+            "activePatchIndex": 186,
             "patches": [
                 {
                     "date": 1718543110408,
@@ -744,6 +744,14 @@
                 {
                     "date": 1718798460174,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -445,8 +445,9 @@\n       emailjs.sendForm('gmail_service', 'contact_form', this)\n         .then(function(response) {\n           console.log('SUCCESS!', response.status, response.text);\n           alert('✨Your message has been sent successfully!');\n+          window.location.reload();\n         }, function(error) {\n           console.log('FAILED...', error);\n           alert('⚠️Failed to send the message, please try again later.');\n         });\n"
+                },
+                {
+                    "date": 1718798697202,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -448,9 +448,9 @@\n           alert('✨Your message has been sent successfully!');\n           window.location.reload();\n         }, function(error) {\n           console.log('FAILED...', error);\n-          alert('⚠️Failed to send the message, please try again later.');\n+          alert('⚠️Failed to send the message, please try again later!');\n         });\n     });\n   </script>\n \n"
+                },
+                {
+                    "date": 1718798781807,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -437,8 +437,9 @@\n     var today = new Date().toISOString().split('T')[0];\n     document.getElementById(\"date\").setAttribute(\"min\", today);\n   </script>\n   \n+  <!--EmailJs-->\n   <script type=\"text/javascript\">\n     document.getElementById('contact-form').addEventListener('submit', function(event) {\n       event.preventDefault();\n \n"
                 }
             ],
             "date": 1718543110408,
