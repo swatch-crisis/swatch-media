@@ -444,11 +444,11 @@ body {
   window.onload = function () {
     document.getElementById('contact_form').addEventListener('submit', function (event) {
       event.preventDefault();
-      emailjs.sendForm('gmail_service', 'contact_form', '#contact_form', this)
+      emailjs.sendForm('gmail_service', 'contact_form', this)
         .then(function()  {
           alert('✨Message sent successfully');
           window.location.reload();
-        }, (error) => {
+        }, (error) {
           alert('⚠️Message failed to be sent. Kindly try again.');
         });
     });

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 175,
+            "activePatchIndex": 176,
             "patches": [
                 {
                     "date": 1718543110408,
@@ -708,6 +708,10 @@
                 {
                     "date": 1718796730569,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -444,9 +444,9 @@\n   window.onload = function () {\n     document.getElementById('contact_form').addEventListener('submit', function (event) {\n       event.preventDefault();\n       emailjs.sendForm('gmail_service', 'contact_form', '#contact_form', this)\n-        .then(function() => {\n+        .then(function()  {\n           alert('✨Message sent successfully');\n           window.location.reload();\n         }, (error) => {\n           alert('⚠️Message failed to be sent. Kindly try again.');\n"
+                },
+                {
+                    "date": 1718796875363,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -443,13 +443,13 @@\n <script type=\"text/javascript\">\n   window.onload = function () {\n     document.getElementById('contact_form').addEventListener('submit', function (event) {\n       event.preventDefault();\n-      emailjs.sendForm('gmail_service', 'contact_form', '#contact_form', this)\n+      emailjs.sendForm('gmail_service', 'contact_form', this)\n         .then(function()  {\n           alert('✨Message sent successfully');\n           window.location.reload();\n-        }, (error) => {\n+        }, (error) {\n           alert('⚠️Message failed to be sent. Kindly try again.');\n         });\n     });\n   }\n"
                 }
             ],
             "date": 1718543110408,
