@@ -10,6 +10,17 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+  <!-- Include EmailJS script -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "_Q9PSvGMbLPdGDnqv",
+      });
+    })();
+  </script>
+  
   <style>
     .button {
       background-color: aqua;
@@ -209,7 +220,7 @@ body {
         </p>
       </div>
 
-        <div class="w3-third w3-margin-bottom">
+      <div class="w3-third w3-margin-bottom">
         <div class="w3-card-4">
           <img src="images/heb.png" alt="heb" style="width:100%">
           <div class="w3-container">
@@ -233,9 +244,9 @@ body {
         </div>
       </div>
 
-        <div class="w3-third w3-margin-bottom">
+      <div class="w3-third w3-margin-bottom">
         <div class="w3-card-4">
-          <img src="images/timocard.jpg" alt="timocard" style="width:100%">
+           <img src="images/timocard.jpg" alt="timocard" style="width:100%">
           <div class="w3-container">
             <h3>Web Design</h3>
             <p class="w3-opacity">AQILA SOFTWARE LIMITED</p>
@@ -311,12 +322,12 @@ body {
     <hr>
     <pre><p id="p1">PPC Advertising                                                            Target specific audiences with their messages and generate leads efficiently and effectively</p></pre>
     <hr>
-  -->
+    -->
 
-<!--column cards for the services-->
+    <!--column cards for the services-->
 <div class="row">
   <div class="column">
-    <div class="w3-hover-shadow card">
+    <div class="w3-hover-shadow card" id="cardservices">
       <span>
         <img class="img-responsive" style="width:50px;height:50px;" src="images/bc.png" alt="sp">
       </span>
@@ -326,7 +337,7 @@ body {
   </div>
 
   <div class="column">
-    <div class="w3-hover-shadow card">
+    <div class="w3-hover-shadow card" id="cardservices">
       <span>
         <img class="img-responsive" style="width:50px;height:50px;" src="images/marketingdesign.png" alt="md">
       </span>
@@ -336,7 +347,7 @@ body {
   </div>
   
   <div class="column">
-    <div class="w3-hover-shadow card">
+    <div class="w3-hover-shadow card" id="cardservices">
       <span>
         <img class="img-responsive" style="width:50px;height:50px;" src="images/brandidentity.png" alt="bi">
       </span>
@@ -346,7 +357,7 @@ body {
   </div>
   
   <div class="column">
-    <div class="w3-hover-shadow card">
+    <div class="w3-hover-shadow card" id="cardservices">
       <span>
         <img class="img-responsive" style="width:50px;height:50px;" src="images/marketingstrategy.png" alt="ms">
       </span>
@@ -360,7 +371,7 @@ body {
 <p>
 <div class="row">
   <div class="column">
-    <div class="w3-hover-shadow card">
+    <div class="w3-hover-shadow card" id="cardservices">
       <span>
         <img class="img-responsive" style="width:50px;height:50px;" src="images/sp.png" alt="sp">
       </span>
@@ -370,7 +381,7 @@ body {
   </div>
 
   <div class="column">
-    <div class="w3-hover-shadow card">
+    <div class="w3-hover-shadow card" id="cardservices">
       <span>
         <img class="img-responsive" style="width:50px;height:50px;" src="images/socialmedia.png" alt="smedia">
       </span>
@@ -380,7 +391,7 @@ body {
   </div>
   
   <div class="column">
-    <div class="w3-hover-shadow card">
+    <div class="w3-hover-shadow card" id="cardservices">
       <span>
         <img class="img-responsive" style="width:50px;height:50px;" src="images/seo.png" alt="seo">
       </span>
@@ -390,7 +401,7 @@ body {
   </div>
   
   <div class="column">
-    <div class="w3-hover-shadow card">
+    <div class="w3-hover-shadow card" id="cardservices">
       <span>
         <img class="img-responsive" style="width:50px;height:50px;" src="images/ppc.png" alt="ppc">
       </span>
@@ -409,18 +420,19 @@ body {
       <div class="w3-center w3-padding-32">
         <h2 class="w3-wide">CONTACT US</h2>
         <p class="w3-opacity"><i>Book a session or just send us a message</i></p>
-
       </div>
-      <form= target="_blank">
+
+      <form action="#" method="post">
         <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="from_name"></p>
-        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="from_email"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="email" placeholder="Email" required name="from_email"></p>
         <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Describe Service" required name="service"></p>
         <p><input class="w3-input w3-padding-16 w3-border" type="date" placeholder="Date and time" required name="date" id="date"></p>
-        <p><textarea class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="message"></textarea></p>
+        <p><textarea class="w3-input w3-padding-16 w3-border" placeholder="Message" required name="message"></textarea></p>
         <p><button type="submit" class="w3-button w3-round-xlarge w3-aqua w3-padding-large w3-large w3-hover-opacity-off">Submit</button></p>
       </form>
     </div>
   </div>
+
 
   <!--The date is set to the current date-->
   <script>
@@ -428,30 +440,19 @@ body {
     document.getElementById("date").setAttribute("min", today);
   </script>
 
-  <!-- Include EmailJS script -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init({
-        publicKey: "_Q9PSvGMbLPdGDnqv",
-      });
-    })();
-  </script>
-  <script type="text/javascript">
-    window.onload = function () {
-      document.getElementById('contact-form').addEventListener('submit', function (event) {
-        event.preventDefault();
-        emailjs.sendForm('gmail_service', 'contact_form', '#contact-form', this)
-          .then(() => {
-            alert('✨Message sent successfully')
-            window.location.reload();
-            console.log('SUCCESS!');
-          }, (error) => {
-            alert('⚠️Message failed to be sent. Kindly try again.')
-            console.log('FAILED...', error);
-          });
-      });
-    }
+<script type="text/javascript">
+  window.onload = function () {
+    document.getElementById('contact_form').addEventListener('submit', function (event) {
+      event.preventDefault();
+      emailjs.sendForm('gmail_service', 'contact_form', '#contact_form', this)
+        .then(function()  {
+          alert('✨Message sent successfully');
+          window.location.reload();
+        }, (error) => {
+          alert('⚠️Message failed to be sent. Kindly try again.');
+        });
+    });
+  }
 
   </script>  
 
