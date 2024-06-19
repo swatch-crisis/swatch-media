@@ -437,22 +437,6 @@ body {
     var today = new Date().toISOString().split('T')[0];
     document.getElementById("date").setAttribute("min", today);
   </script>
-<!--
-<script type="text/javascript">
-  window.onload = function () {
-    document.getElementById('contact_form').addEventListener('submit', function (event) {
-      event.preventDefault();
-      emailjs.sendForm('gmail_service', 'contact_form', this)
-        .then(function()  {
-          alert('✨Message sent successfully');
-          window.location.reload();
-        }, (error) {
-          alert('⚠️Message failed to be sent. Kindly try again.');
-        });
-    });
-  }
-
-  </script> -->
   
   <script type="text/javascript">
     document.getElementById('contact-form').addEventListener('submit', function(event) {
@@ -461,10 +445,10 @@ body {
       emailjs.sendForm('gmail_service', 'contact_form', this)
         .then(function(response) {
           console.log('SUCCESS!', response.status, response.text);
-          alert('Your message has been sent successfully!');
+          alert('✨Your message has been sent successfully!');
         }, function(error) {
           console.log('FAILED...', error);
-          alert('Failed to send the message, please try again later.');
+          alert('⚠️Failed to send the message, please try again later.');
         });
     });
   </script>
