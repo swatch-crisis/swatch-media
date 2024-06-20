@@ -38,7 +38,8 @@
     }
 
     body {
-      font-family: "Source Sans Pro"
+      font-family: "Source Sans Pro";
+      font-family: Arial, Helvetica, sans-serif;
     }
 
     .myBtn {
@@ -102,10 +103,6 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 /* Float four columns side by side */
 .column {
   float: left;
@@ -142,10 +139,50 @@ body {
 
 }
 
-.w3-card-4 {
+#hamburger {
+    margin-top: 8vh;
+    z-index: 1001;
+    position: fixed;      top: 0;
+ }
 
+@media only screen and (max-width: 992px) {
+  .checkbtn {
+  display: block;
+  font-size: 5rem;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  }
+ .nav-mobile {
+  top: 0px;
+  width: 100%;
+  }
+ .nav-mobile a {
+  font-size: 2rem;
+  padding: 2rem 3rem;
+  }
+ }
+
+ #Home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover; /* Ensure the image covers the entire container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+  padding-top: 10px;
 }
 
-#hamburger {
-    margin-top: 7vh;
+@media only screen and (max-width: 768px) {
+  #Home {
+    background-attachment: scroll; /* Fix for mobile devices */
+  }
+
+  .welcome-content h1 {
+    font-size: 2em; /* Adjust font size for mobile */
+  }
+}
+
+#navbar{
+  padding: 0px 15px 15px 0px;  /* top, right, bottom, left */
 }
