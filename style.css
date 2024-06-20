@@ -186,3 +186,24 @@
 #navbar{
   padding: 0px 15px 15px 0px;  /* top, right, bottom, left */
 }
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap; /* Allows items to wrap to the next line if there's not enough space */
+  text-align: center;
+  padding: 10px;
+}
+
+.footer-container a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0 10px; /* Adjust spacing between items */
+}
+
+.footer-text {
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+}
