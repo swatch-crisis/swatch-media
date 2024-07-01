@@ -151,6 +151,10 @@
   padding: 16px;
   text-align: center;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 
 
 }
