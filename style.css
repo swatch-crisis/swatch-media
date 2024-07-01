@@ -172,22 +172,22 @@
  /* Responsive design for smaller screens */
  @media (max-width: 768px) {
   .w3-third {
-    width: 100%;
-    max-width: 100%;
+    width: 33.33%;
+    max-width: 33.33%;
   }
 }
 
 @media (max-width: 600px) {
   .w3-third {
-    width: 100%;
-    max-width: 100%;
+    width: 33.33%;
+    max-width: 33.33%;
   }
 }
 
 @media (max-width: 1200px) {
   .w3-third {
-    width: 100%;
-    max-width: 100%;
+    width: 33.33%;
+    max-width: 33.33%;
   }
 }
 
