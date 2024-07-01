@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 64,
+            "activePatchIndex": 67,
             "patches": [
                 {
                     "date": 1718804050870,
@@ -264,6 +264,18 @@
                 {
                     "date": 1719834256684,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -130,17 +130,19 @@\n }\n \n @media (max-width: 1200px) {\n   .column {\n-    flex: 1 1 45%;\n-    max-width: 45%;\n+    width: 100%;\n+    display: block;\n+    margin-bottom: 20px;\n   }\n }\n \n @media (max-width: 768px) {\n   .column {\n-    flex: 1 1 100%;\n-    max-width: 100%;\n+    width: 100%;\n+    display: block;\n+    margin-bottom: 20px;\n   }\n }\n \n /* Style the counter cards */\n"
+                },
+                {
+                    "date": 1719837964366,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -221,5 +221,12 @@\n .footer-text {\n   width: 100%;\n   margin-top: 10px;\n   text-align: center;\n+}\n+\n+.w3-third {\n+  flex: 1 1 30%;\n+  max-width: 30%;\n+  box-sizing: border-box;\n+  padding: 16px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1719837992860,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -227,6 +227,5 @@\n .w3-third {\n   flex: 1 1 30%;\n   max-width: 30%;\n   box-sizing: border-box;\n-  padding: 16px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1719838029962,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -221,11 +221,5 @@\n .footer-text {\n   width: 100%;\n   margin-top: 10px;\n   text-align: center;\n-}\n-\n-.w3-third {\n-  flex: 1 1 30%;\n-  max-width: 30%;\n-  box-sizing: border-box;\n }\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1718804050870,
