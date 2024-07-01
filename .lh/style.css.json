@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 68,
+            "activePatchIndex": 70,
             "patches": [
                 {
                     "date": 1718804050870,
@@ -280,6 +280,14 @@
                 {
                     "date": 1719838650489,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -150,8 +150,12 @@\n   box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);\n   padding: 16px;\n   text-align: center;\n   background-color: #fff;\n+  display: flex;\n+  flex-direction: column;\n+  justify-content: space-between;\n+  height: 100%;\n \n \n }\n \n"
+                },
+                {
+                    "date": 1719839323634,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -154,12 +154,30 @@\n   display: flex;\n   flex-direction: column;\n   justify-content: space-between;\n   height: 100%;\n+}\n \n+.w3-third {\n+  width: 33.33%;\n+  max-width: 33.33%;\n+  padding: 16px;\n+  box-sizing: border-box;\n+}\n \n+.w3-row-padding {\n+  display: flex;\n+  flex-wrap: wrap;\n }\n \n+ /* Responsive design for smaller screens */\n+ @media (max-width: 768px) {\n+  .w3-third {\n+    width: 100%;\n+    max-width: 100%;\n+  }\n+}\n+\n #hamburger {\n     margin-top: 8vh;\n     z-index: 1001;\n     position: fixed;      top: 0;\n"
+                },
+                {
+                    "date": 1719839429928,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -176,8 +176,22 @@\n     max-width: 100%;\n   }\n }\n \n+@media (max-width: 600px) {\n+  .w3-third {\n+    width: 100%;\n+    max-width: 100%;\n+  }\n+}\n+\n+@media (max-width: 1200px) {\n+  .w3-third {\n+    width: 100%;\n+    max-width: 100%;\n+  }\n+}\n+\n #hamburger {\n     margin-top: 8vh;\n     z-index: 1001;\n     position: fixed;      top: 0;\n"
                 }
             ],
             "date": 1718804050870,
