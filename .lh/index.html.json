@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 239,
+            "activePatchIndex": 240,
             "patches": [
                 {
                     "date": 1718543110408,
@@ -964,6 +964,10 @@
                 {
                     "date": 1719837969164,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -252,8 +252,9 @@\n       <h3>Strategic Planning & Consulting</h3>\n       <p id=\"work_model\">Establish clear objectives, assess your SWOT, and formulate a strategic POA to achieve those goals.</p>\n     </div>\n   </div>\n+  \n \n   <div class=\"column\">\n     <div class=\"w3-hover-shadow card\" id=\"cardservices\">\n       <span>\n"
+                },
+                {
+                    "date": 1722498229551,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,19 @@\n <!DOCTYPE html>\n <html lang=\"en\">\n \n <head>\n+\n+  <!-- Google tag (gtag.js) -->\n+<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-VTBRRQ18QC\"></script>\n+<script>\n+  window.dataLayer = window.dataLayer || [];\n+  function gtag(){dataLayer.push(arguments);}\n+  gtag('js', new Date());\n+\n+  gtag('config', 'G-VTBRRQ18QC');\n+</script>\n+\n   <title>Swatch Media</title>\n   <meta charset=\"UTF-8\">\n   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n   <link rel=\"shortcut icon\" href=\"images/slogo2022.jpg\">\n"
                 }
             ],
             "date": 1718543110408,
