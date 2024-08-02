@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 240,
+            "activePatchIndex": 241,
             "patches": [
                 {
                     "date": 1718543110408,
@@ -968,6 +968,10 @@
                 {
                     "date": 1722498229551,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,19 @@\n <!DOCTYPE html>\n <html lang=\"en\">\n \n <head>\n+\n+  <!-- Google tag (gtag.js) -->\n+<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-VTBRRQ18QC\"></script>\n+<script>\n+  window.dataLayer = window.dataLayer || [];\n+  function gtag(){dataLayer.push(arguments);}\n+  gtag('js', new Date());\n+\n+  gtag('config', 'G-VTBRRQ18QC');\n+</script>\n+\n   <title>Swatch Media</title>\n   <meta charset=\"UTF-8\">\n   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n   <link rel=\"shortcut icon\" href=\"images/slogo2022.jpg\">\n"
+                },
+                {
+                    "date": 1722631436685,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,19 +1,8 @@\n <!DOCTYPE html>\n <html lang=\"en\">\n \n <head>\n-\n-  <!-- Google tag (gtag.js) -->\n-<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-VTBRRQ18QC\"></script>\n-<script>\n-  window.dataLayer = window.dataLayer || [];\n-  function gtag(){dataLayer.push(arguments);}\n-  gtag('js', new Date());\n-\n-  gtag('config', 'G-VTBRRQ18QC');\n-</script>\n-\n   <title>Swatch Media</title>\n   <meta charset=\"UTF-8\">\n   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n   <link rel=\"shortcut icon\" href=\"images/slogo2022.jpg\">\n@@ -49,9 +38,19 @@\n     menu.classList.remove('w3-show');\n     menu.classList.add('w3-hide');\n   }\n </script>\n+\n+<!-- Google tag (gtag.js) -->\n+  <script async src=\"https://www.googletagmanager.com/gtag/js?id=G-VTBRRQ18QC\"></script>\n+  <script>\n+    window.dataLayer = window.dataLayer || [];\n+    function gtag(){dataLayer.push(arguments);}\n+    gtag('js', new Date());\n   \n+    gtag('config', 'G-VTBRRQ18QC');\n+  </script>\n+  \n </head>\n \n <body class=\"w3-light-white w3-margin\">\n   <!-- Navigation bar with links -->\n"
                 }
             ],
             "date": 1718543110408,
