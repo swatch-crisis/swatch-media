@@ -224,3 +224,21 @@
   margin-top: 10px;
   text-align: center;
 }
+
+#contactus{
+  background-color: #fff; /* Background color */
+  border: 2px solid #000000; /* Border color and thickness */
+  border-radius: 5px;
+  color: rgb(0, 0, 0); /* Text color */
+  padding: 10px 24px; /* Padding inside the button */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline from text */
+  display: inline-block; /* Display inline */
+  font-size: 16px; /* Text size */
+  cursor: pointer; /* Cursor changes to pointer when hovering */
+  transition: background-color 0.5s, color 0.5s; /* Smooth transition */
+}
+
+#contactus.hover{
+  background-color: aqua; /* Background color on hover */
+}
