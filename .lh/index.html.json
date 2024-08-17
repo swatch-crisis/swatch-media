@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 250,
+            "activePatchIndex": 251,
             "patches": [
                 {
                     "date": 1718543110408,
@@ -1008,6 +1008,10 @@
                 {
                     "date": 1723911232810,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -209,10 +209,10 @@\n     -->\n \n     <!--column cards for the services-->\n <div class=\"row\">\n-  <div class=\"column\">\n-    <!--<div class=\"w3-hover-shadow card\" id=\"cardservices\">\n+  <!--<div class=\"column\">\n+    <div class=\"w3-hover-shadow card\" id=\"cardservices\">\n       <span>\n         <img class=\"img-responsive\" style=\"width:50px;height:50px;\" src=\"images/bc.png\" alt=\"sp\">\n       </span>\n       <h3>Business Consulting</h3>\n"
+                },
+                {
+                    "date": 1723913537144,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -160,9 +160,9 @@\n       <div class=\"w3-third w3-margin-bottom\">\n         <div class=\"w3-card-4\">\n           <img src=\"images/Budget.png\" alt=\"budget\" style=\"width:100%\">\n           <div class=\"w3-container\">\n-            <h3>UI Design</h3>\n+            <h3>UI/UX Design</h3>\n             <p class=\"w3-opacity\">ETHOS MOBIILE WALLET</p>\n             <p>A wallet project that required a lot of research to implement the design but our over-qualified team hacked it. Incorporated next generation designs.</p>\n             <p><a href=\"https://www.behance.net/gallery/200472195/Ethos-Mobile-Wallet\" target=\"_blank\" style=\"text-decoration: none\" rel=\"noopener\"> <button class=\"w3-button w3-round-xlarge w3-aqua w3-block\">VIEW PROJECT</button></a></p>\n           </div>\n"
                 }
             ],
             "date": 1718543110408,
