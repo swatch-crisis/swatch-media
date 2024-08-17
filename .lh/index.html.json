@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 247,
+            "activePatchIndex": 250,
             "patches": [
                 {
                     "date": 1718543110408,
@@ -996,6 +996,18 @@
                 {
                     "date": 1723557057959,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,9 @@\n     <a href=\"#contact_form\" id=\"contactus\" class=\"w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right\"\n       style=\"margin-top:10px;\">CONTACT US</a>\n     <a href=\"#Services\" class=\"w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right\"\n       style=\"margin-top:10px;\">SERVICES</a>\n-    <a href=\"#Portfolio\" class=\"w3-hide -small w3-bar-item w3-button w3-mobile w3-medium w3-right\"\n+    <a href=\"#Portfolio\" class=\"w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right\"\n       style=\"margin-top:10px;\">PORTFOLIO</a>\n     <a href=\"#Home\" class=\"w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right\"\n       style=\"margin-top:10px;\">HOME</a>\n       <a class=\"w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large\" style=\"margin-top:10px;\" onclick=\"toggleMenu()\">&#9939;</a>\n"
+                },
+                {
+                    "date": 1723910976984,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -210,8 +210,18 @@\n \n     <!--column cards for the services-->\n <div class=\"row\">\n   <div class=\"column\">\n+    <!--<div class=\"w3-hover-shadow card\" id=\"cardservices\">\n+      <span>\n+        <img class=\"img-responsive\" style=\"width:50px;height:50px;\" src=\"images/bc.png\" alt=\"sp\">\n+      </span>\n+      <h3>Business Consulting</h3>\n+      <p id=\"work_model\">Build a business model to increase revenue and a clear client retention strategy</p>\n+    </div>\n+  </div> -->\n+\n+  <div class=\"column\">\n     <div class=\"w3-hover-shadow card\" id=\"cardservices\">\n       <span>\n         <img class=\"img-responsive\" style=\"width:50px;height:50px;\" src=\"images/bc.png\" alt=\"sp\">\n       </span>\n"
+                },
+                {
+                    "date": 1723911202595,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -224,10 +224,10 @@\n     <div class=\"w3-hover-shadow card\" id=\"cardservices\">\n       <span>\n         <img class=\"img-responsive\" style=\"width:50px;height:50px;\" src=\"images/bc.png\" alt=\"sp\">\n       </span>\n-      <h3>Business Consulting</h3>\n-      <p id=\"work_model\">Build a business model to increase revenue and a clear client retention strategy</p>\n+      <h3>UI/UX Design</h3>\n+      <p id=\"work_model\">Enhance user experience with our top-notch interface design</p>\n     </div>\n   </div>\n \n   <div class=\"column\">\n"
+                },
+                {
+                    "date": 1723911232810,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -209,10 +209,10 @@\n     -->\n \n     <!--column cards for the services-->\n <div class=\"row\">\n-  <div class=\"column\">\n-    <!--<div class=\"w3-hover-shadow card\" id=\"cardservices\">\n+  <!--<div class=\"column\">\n+    <div class=\"w3-hover-shadow card\" id=\"cardservices\">\n       <span>\n         <img class=\"img-responsive\" style=\"width:50px;height:50px;\" src=\"images/bc.png\" alt=\"sp\">\n       </span>\n       <h3>Business Consulting</h3>\n"
                 }
             ],
             "date": 1718543110408,
