@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 252,
+            "activePatchIndex": 253,
             "patches": [
                 {
                     "date": 1718543110408,
@@ -1016,6 +1016,10 @@
                 {
                     "date": 1737013605331,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -305,8 +305,54 @@\n     </div>\n   </div>\n </div>\n </p>\n+\n+<!--column cards for the services2-->\n+<p>\n+  <div class=\"row\">\n+    <div class=\"column\">\n+      <div class=\"w3-hover-shadow card\" id=\"cardservices\">\n+        <span>\n+          <img class=\"img-responsive\" style=\"width:50px;height:50px;\" src=\"images/sp.png\" alt=\"sp\">\n+        </span>\n+        <h3>Strategic Planning & Consulting</h3>\n+        <p id=\"work_model\">Establish clear objectives, assess your SWOT, and formulate a strategic POA to achieve those goals.</p>\n+      </div>\n+    </div>\n+    \n+  \n+    <div class=\"column\">\n+      <div class=\"w3-hover-shadow card\" id=\"cardservices\">\n+        <span>\n+          <img class=\"img-responsive\" style=\"width:50px;height:50px;\" src=\"images/socialmedia.png\" alt=\"smedia\">\n+        </span>\n+        <h3>Social Media Marketing</h3>\n+        <p id=\"work_model\">Utilize the power of social media platforms to promote brands, products, and services</p>\n+      </div>\n+    </div>\n+    \n+    <div class=\"column\">\n+      <div class=\"w3-hover-shadow card\" id=\"cardservices\">\n+        <span>\n+          <img class=\"img-responsive\" style=\"width:50px;height:50px;\" src=\"images/seo.png\" alt=\"seo\">\n+        </span>\n+        <h3>Search Engine Optimization</h3>\n+        <p id=\"work_model\">Enhance online visibility through the implementation of diverse techniques and strategies</p>\n+      </div>\n+    </div>\n+    \n+    <div class=\"column\">\n+      <div class=\"w3-hover-shadow card\" id=\"cardservices\">\n+        <span>\n+          <img class=\"img-responsive\" style=\"width:50px;height:50px;\" src=\"images/ppc.png\" alt=\"ppc\">\n+        </span>\n+        <h3>Pay-per-click(PPC) Advertising</h3>\n+        <p id=\"work_model\">Target specific audiences with their messages and generate leads efficiently and effectively</p>\n+      </div>\n+    </div>\n+  </div>\n+  </p>\n </details>\n <br>\n \n   <!-- Contact -->\n"
+                },
+                {
+                    "date": 1737013690344,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -306,9 +306,9 @@\n   </div>\n </div>\n </p>\n \n-<!--column cards for the services2-->\n+<!--column cards for the services3-->\n <p>\n   <div class=\"row\">\n     <div class=\"column\">\n       <div class=\"w3-hover-shadow card\" id=\"cardservices\">\n"
                 }
             ],
             "date": 1718543110408,
