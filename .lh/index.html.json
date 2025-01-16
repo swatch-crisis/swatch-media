@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 287,
+            "activePatchIndex": 288,
             "patches": [
                 {
                     "date": 1718543110408,
@@ -1156,6 +1156,10 @@
                 {
                     "date": 1737025575117,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -302,9 +302,9 @@\n <p>\n   <div class=\"column\">\n     <div class=\"w3-hover-shadow card\" id=\"cardservices\">\n       <span>\n-        <img class=\"img-responsive\" style=\"width:50px;height:50px;\" src=\"images/bc.png\" alt=\"sp\">\n+        <img class=\"img-responsive\" style=\"width:50px;height:50px;\" src=\"images/ui ux.png\" alt=\"sp\">\n       </span>\n       <h3>UI/UX Design</h3>\n       <p id=\"work_model\">Creating user interfaces and enhancing user experiences to ensure products are intuitive, engaging, and easy to use.</p>\n     </div>\n@@ -313,9 +313,9 @@\n   \n     <div class=\"column\">\n       <div class=\"w3-hover-shadow card\" id=\"cardservices\">\n         <span>\n-          <img class=\"img-responsive\" style=\"width:50px;height:50px;\" src=\"images/socialmedia.png\" alt=\"smedia\">\n+          <img class=\"img-responsive\" style=\"width:50px;height:50px;\" src=\"images/analytics.png\" alt=\"smedia\">\n         </span>\n         <h3>Analytics and Reporting</h3>\n         <p id=\"work_model\">Collection, analysis, and presentation of data to measure performance, identify trends, and support informed decision-making.</p>\n       </div>\n@@ -323,9 +323,9 @@\n     \n     <div class=\"column\">\n       <div class=\"w3-hover-shadow card\" id=\"cardservices\">\n         <span>\n-          <img class=\"img-responsive\" style=\"width:50px;height:50px;\" src=\"images/seo.png\" alt=\"seo\">\n+          <img class=\"img-responsive\" style=\"width:50px;height:50px;\" src=\"images/process improvement.png\" alt=\"seo\">\n         </span>\n         <h3>Process Improvement</h3>\n         <p id=\"work_model\">Analyzing and enhancing business processes to increase efficiency, reduce costs, and improve overall performance.</p>\n       </div>\n@@ -333,9 +333,9 @@\n     \n     <div class=\"column\">\n       <div class=\"w3-hover-shadow card\" id=\"cardservices\">\n         <span>\n-          <img class=\"img-responsive\" style=\"width:50px;height:50px;\" src=\"images/ppc.png\" alt=\"ppc\">\n+          <img class=\"img-responsive\" style=\"width:50px;height:50px;\" src=\"images/roject management.png\" alt=\"ppc\">\n         </span>\n         <h3>Project Mgmt & Executioin</h3>\n         <p id=\"work_model\">Planning, organizing, and overseeing projects to ensure they are completed on time, within scope, and within budget.</p>\n       </div>\n"
+                },
+                {
+                    "date": 1737025876810,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -333,9 +333,9 @@\n     \n     <div class=\"column\">\n       <div class=\"w3-hover-shadow card\" id=\"cardservices\">\n         <span>\n-          <img class=\"img-responsive\" style=\"width:50px;height:50px;\" src=\"images/roject management.png\" alt=\"ppc\">\n+          <img class=\"img-responsive\" style=\"width:50px;height:50px;\" src=\"images/project management.png\" alt=\"ppc\">\n         </span>\n         <h3>Project Mgmt & Executioin</h3>\n         <p id=\"work_model\">Planning, organizing, and overseeing projects to ensure they are completed on time, within scope, and within budget.</p>\n       </div>\n"
                 }
             ],
             "date": 1718543110408,
