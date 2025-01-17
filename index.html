@@ -1,99 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Swatch Media</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/slogo2022.jpg" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-<head>
-  <title>Swatch Media</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="images/slogo2022.jpg">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style.css">
- 
+    <!-- Include EmailJS script -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("_Q9PSvGMbLPdGDnqv");
+      })();
+    </script>
 
-  <!-- Include EmailJS script -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init("_Q9PSvGMbLPdGDnqv");
-    })();
-  </script>
+    <script>
+      function toggleHamburgerMenu() {
+        var menu = document.getElementById("hamburger");
+        if (menu.classList.contains("w3-show")) {
+          menu.classList.remove("w3-show");
+          menu.classList.add("w3-hide");
+        } else {
+          menu.classList.remove("w3-hide");
+          menu.classList.add("w3-show");
+        }
+      }
 
-<script>
-  function toggleHamburgerMenu() {
-    var menu = document.getElementById('hamburger');
-    if (menu.classList.contains('w3-show')) {
-      menu.classList.remove('w3-show');
-      menu.classList.add('w3-hide');
-    } else {
-      menu.classList.remove('w3-hide');
-      menu.classList.add('w3-show');
-    }
-  }
+      function closeHamburgerMenu() {
+        var menu = document.getElementById("hamburger");
+        menu.classList.remove("w3-show");
+        menu.classList.add("w3-hide");
+      }
+    </script>
 
-  function closeHamburgerMenu() {
-    var menu = document.getElementById('hamburger');
-    menu.classList.remove('w3-show');
-    menu.classList.add('w3-hide');
-  }
-</script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-VTBRRQ18QC"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VTBRRQ18QC"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'G-VTBRRQ18QC');
-  </script>
-  
-</head>
+      gtag("config", "G-VTBRRQ18QC");
+    </script>
+  </head>
 
-<body class="w3-light-white w3-margin">
-  <!-- Navigation bar with links -->
-  <div id="navbar" class="fixed-navbar w3-bar w3-white w3-text-black"
-    style="position: fixed; top: 0; left: 0; right: 0; z-index: 9999; width: 100%; height: 65px;">
-    <img src="images/slogo2022.jpg" class="w3-left" alt="Logo" width="60" height="60">
-    <h2 class="w3-left w3-tag w3-white w3-round w3-black">SWATCH MEDIA</h2>
-    <a href="#contact_form" id="contactus" class="w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right"
-      style="margin-top:10px;">CONTACT US</a>
-    <a href="#Services" class="w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right"
-      style="margin-top:10px;">SERVICES</a>
-    <a href="#Portfolio" class="w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right"
-      style="margin-top:10px;">PORTFOLIO</a>
-    <a href="#Home" class="w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right"
-      style="margin-top:10px;">HOME</a>
-      <a class="w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large" style="margin-top:10px;" onclick="toggleMenu()">&#9939;</a>
-  </div>
+  <body class="w3-light-white w3-margin">
+    <!-- Navigation bar with links -->
+    <div
+      id="navbar"
+      class="fixed-navbar w3-bar w3-white w3-text-black"
+      style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+        width: 100%;
+        height: 65px;
+      "
+    >
+      <img
+        src="images/slogo2022.jpg"
+        class="w3-left"
+        alt="Logo"
+        width="60"
+        height="60"
+      />
+      <h2 class="w3-left w3-tag w3-white w3-round w3-black">SWATCH MEDIA</h2>
+      <a
+        href="#contact_form"
+        id="contactus"
+        class="w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right"
+        style="margin-top: 10px"
+        >CONTACT US</a
+      >
+      <a
+        href="#Services"
+        class="w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right"
+        style="margin-top: 10px"
+        >SERVICES</a
+      >
+      <a
+        href="#Portfolio"
+        class="w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right"
+        style="margin-top: 10px"
+        >PORTFOLIO</a
+      >
+      <a
+        href="#Home"
+        class="w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right"
+        style="margin-top: 10px"
+        >HOME</a
+      >
+      <a
+        class="w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large"
+        style="margin-top: 10px"
+        onclick="toggleMenu()"
+        >&#9939;</a
+      >
+    </div>
 
-  <!-- Bar mobile view-->
-  <div id="hamburger" class="w3-bar-block w3-white w3-hide w3-hide-large w3-small">
-    <a href="#Home" class="w3-bar-item w3-button" onclick="closeHamburgerMenu()">HOME</a>
-    <a href="#Portfolio" class="w3-bar-item w3-button" onclick="closeHamburgerMenu()">PORTFOLIO</a>
-    <a href="#Services" class="w3-bar-item w3-button" onclick="closeHamburgerMenu()">SERVICES</a>
-    <a href="#contact_form" class="w3-bar-item w3-button" onclick="closeHamburgerMenu()">CONTACT US</a>
-  </div>
+    <!-- Bar mobile view-->
+    <div
+      id="hamburger"
+      class="w3-bar-block w3-white w3-hide w3-hide-large w3-small"
+    >
+      <a
+        href="#Home"
+        class="w3-bar-item w3-button"
+        onclick="closeHamburgerMenu()"
+        >HOME</a
+      >
+      <a
+        href="#Portfolio"
+        class="w3-bar-item w3-button"
+        onclick="closeHamburgerMenu()"
+        >PORTFOLIO</a
+      >
+      <a
+        href="#Services"
+        class="w3-bar-item w3-button"
+        onclick="closeHamburgerMenu()"
+        >SERVICES</a
+      >
+      <a
+        href="#contact_form"
+        class="w3-bar-item w3-button"
+        onclick="closeHamburgerMenu()"
+        >CONTACT US</a
+      >
+    </div>
 
-  <div class="w3-content" style="max-width:1600px">
-    <!-- Image header -->
-    <header class="w3-display-container w3-wide" style="padding-bottom:0px; margin-top: 0px" id="Home">
-      <img class="w3-image"
-        src="https://images.unsplash.com/photo-1587440871875-191322ee64b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80"
-        alt="Photo by Jamie Street" width="1600" height="400">
-      <div class="w3-display-left w3-padding-small">
-        <h1 class="w3-text-black">IT STARTS WITH US</h1>
-        <h1 class="w3-jumbo w3-hover-text-black w3-hide-small "><b>BUSINESS & BRANDING</b></h1>
-        <h6><a href="#contact_form" style="text-decoration: none" ><button class="w3-button w3-round-small w3-aqua w3-padding-large w3-hover-opacity-off">BOOK A SESSION</button></a></button></h6>
-      </div>
-    </header>
+    <div class="w3-content" style="max-width: 1600px">
+      <!-- Image header -->
+      <header
+        class="w3-display-container w3-wide"
+        style="padding-bottom: 0px; margin-top: 0px"
+        id="Home"
+      >
+        <img
+          class="w3-image"
+          src="https://images.unsplash.com/photo-1587440871875-191322ee64b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80"
+          alt="Photo by Jamie Street"
+          width="1600"
+          height="400"
+        />
+        <div class="w3-display-left w3-padding-small">
+          <h1 class="w3-text-black">IT STARTS WITH US</h1>
+          <h1 class="w3-jumbo w3-hover-text-black w3-hide-small">
+            <b>BUSINESS & BRANDING</b>
+          </h1>
+          <h6>
+            <a href="#contact_form" style="text-decoration: none"
+              ><button
+                class="w3-button w3-round-small w3-aqua w3-padding-large w3-hover-opacity-off"
+              >
+                BOOK A SESSION
+              </button></a
+            >
+          </h6>
+        </div>
+      </header>
+    </div>
 
     <!-- Portfolio section -->
-    <div class="w3-row-padding" id="Portfolio">
+    <section class="w3-row-padding" id="Portfolio">
       <div class="w3-center w3-padding-32">
         <h2 class="w3-wide w3-center">PORTFOLIO</h2>
+<<<<<<< HEAD
         <p class="w3-white w3-text-black w3-center-align">
           Swatch Media began as a graphics and web design firm dedicated to providing a professional online presence. We have since expanded our services to include offline branding and marketing solutions. Our primary focus lies in Branding, Marketing, and Business Consultancy.
 
@@ -107,341 +203,556 @@ Our goal is to understand and address the needs of an increasingly dynamic econo
       <div class="w3-third w3-margin-bottom">
         <div class="w3-card-4">
           <img src="images/heb.png" alt="heb" style="width:100%">
+=======
+        <p class="w3-opacity w3-center"><i>Previous Works</i></p>
+        <br />
+        <p class="w3-white w3-text-black w3-center-align">
+          Swatch Media started as a graphics and web design company keen on
+          offering professional online presence. We resorted to also provide
+          offline presence. Our main focus is Branding, Marketing and Business
+          Consultancy. Our team is filled with passion and we pursue every
+          project with the relevant expertise. We work with both companies and
+          individuals particularly start ups who strive to build and expose
+          their brand. We are a highly driven, creative and result oriented team
+          with the ability to prioritize and set directon in a fast-paced
+          environment. Our goal is to capture the needs and wants of the very
+          fast growing economy inorder to realise the expectations of our
+          current and future clients.
+        </p>
+      </div>
+
+      <div class="grid-cards-container">
+        <article class="grid-card">
+          <img src="images/heb.png" alt="heb" style="width: 100%" />
+>>>>>>> 46c063084d9106ebab1dce2e0399ec021abac859
           <div class="w3-container">
             <h3>Brand Design</h3>
             <p class="w3-opacity">HEB ENTERPRISES</p>
-            <p>A complete rebrand of this organisation. From the logo, theme, colors, typography and photography and all other related visual assets </p>
-            <p><a href="#contact_form" style="text-decoration: none"><button class="w3-button w3-round-xlarge w3-aqua w3-block">VIEW PROJECT</button></a></p>
+            <p>
+              A complete rebrand of this organisation. From the logo, theme,
+              colors, typography and photography and all other related visual
+              assets
+            </p>
+            <p>
+              <a href="#contact_form" style="text-decoration: none"
+                ><button class="w3-button w3-round-xlarge w3-aqua w3-block">
+                  VIEW PROJECT
+                </button></a
+              >
+            </p>
           </div>
-        </div>
-      </div>
+        </article>
 
-      <div class="w3-third w3-margin-bottom">
-        <div class="w3-card-4">
-          <img src="images/BB.jpg" alt="BB" style="width:100%">
+        <article class="grid-card">
+          <img src="images/BB.jpg" alt="BB" style="width: 100%" />
           <div class="w3-container">
             <h3>Graphics</h3>
             <p class="w3-opacity">BRYSHI SERVICES LIMITED</p>
-            <p>Our team went all in on this project. This client wanted a logo that would speak for itself and we delivered. It is what we do best. Bold and precise </p>
-            <p><a href="https://www.behance.net/gallery/159637535/BRYSHI-SERVICES-LIMITED" target="_blank" style="text-decoration: none" rel="noopener"> <button class="w3-button w3-round-xlarge w3-aqua w3-block">VIEW PROJECT</button></a></p>
+            <p>
+              Our team went all in on this project. This client wanted a logo
+              that would speak for itself and we delivered. It is what we do
+              best. Bold and precise
+            </p>
+            <p>
+              <a
+                href="https://www.behance.net/gallery/159637535/BRYSHI-SERVICES-LIMITED"
+                target="_blank"
+                style="text-decoration: none"
+                rel="noopener"
+              >
+                <button class="w3-button w3-round-xlarge w3-aqua w3-block">
+                  VIEW PROJECT
+                </button></a
+              >
+            </p>
           </div>
-        </div>
-      </div>
+        </article>
 
-      <div class="w3-third w3-margin-bottom">
-        <div class="w3-card-4">
-           <img src="images/timocard.jpg" alt="timocard" style="width:100%">
+        <article class="grid-card">
+          <img src="images/timocard.jpg" alt="timocard" style="width: 100%" />
           <div class="w3-container">
             <h3>Web Design</h3>
             <p class="w3-opacity">AQILA SOFTWARE LIMITED</p>
-            <p>A complete brand development project with Aqila. A highly technical client but we delivered a masterpiece in every aspect we worked on. </p>
-            <p><a href="https://aqila.co.ke/" target="_blank" style="text-decoration: none" rel="noopener"> <button class="w3-button w3-round-xlarge w3-aqua w3-block"> VIEW PROJECT</button></a></p>
+            <p>
+              A complete brand development project with Aqila. A highly
+              technical client but we delivered a masterpiece in every aspect we
+              worked on.
+            </p>
+            <p>
+              <a
+                href="https://aqila.co.ke/"
+                target="_blank"
+                style="text-decoration: none"
+                rel="noopener"
+              >
+                <button class="w3-button w3-round-xlarge w3-aqua w3-block">
+                  VIEW PROJECT
+                </button></a
+              >
+            </p>
           </div>
-        </div>
-      </div>
-    </div>
+        </article>
 
-    
-
-       <!-- 2nd row section -->
-    <div class="w3-row-padding" id="secondrow">
-      <div class="w3-third w3-margin-bottom">
-        <div class="w3-card-4">
-          <img src="images/mbiusplashlandscape.jpeg" alt="mbiufun" style="width:100%">
+        <article class="grid-card">
+          <img
+            src="images/mbiusplashlandscape.jpeg"
+            alt="mbiufun"
+            style="width: 100%"
+          />
           <div class="w3-container">
             <h3>UI/UX Design</h3>
             <p class="w3-opacity">MBIUFUN GAMING</p>
-            <p>A rebrand episode giving it a new and fresh look. The engagements increased with an upgrade in the user experience and an increase in functionalities.</p>
-            <p><a href="https://www.behance.net/gallery/200472379/Mbiu-Social-App" target="_blank" style="text-decoration: none" rel="noopener"> <button class="w3-button w3-round-xlarge w3-aqua w3-block">VIEW PROJECT</button></a></p>
+            <p>
+              A rebrand episode giving it a new and fresh look. The engagements
+              increased with an upgrade in the user experience and an increase
+              in functionalities.
+            </p>
+            <p>
+              <a
+                href="https://www.behance.net/gallery/200472379/Mbiu-Social-App"
+                target="_blank"
+                style="text-decoration: none"
+                rel="noopener"
+              >
+                <button class="w3-button w3-round-xlarge w3-aqua w3-block">
+                  VIEW PROJECT
+                </button></a
+              >
+            </p>
           </div>
-        </div>
-      </div>
+        </article>
 
-      <div class="w3-third w3-margin-bottom">
-        <div class="w3-card-4">
-          <img src="images/Budget.png" alt="budget" style="width:100%">
+        <article class="grid-card">
+          <img src="images/Budget.png" alt="budget" style="width: 100%" />
           <div class="w3-container">
             <h3>UI/UX Design</h3>
             <p class="w3-opacity">ETHOS MOBIILE WALLET</p>
-            <p>A wallet project that required a lot of research to implement the design but our over-qualified team hacked it. Incorporated next generation designs.</p>
-            <p><a href="https://www.behance.net/gallery/200472195/Ethos-Mobile-Wallet" target="_blank" style="text-decoration: none" rel="noopener"> <button class="w3-button w3-round-xlarge w3-aqua w3-block">VIEW PROJECT</button></a></p>
+            <p>
+              A wallet project that required a lot of research to implement the
+              design but our over-qualified team hacked it. Incorporated next
+              generation designs.
+            </p>
+            <p>
+              <a
+                href="https://www.behance.net/gallery/200472195/Ethos-Mobile-Wallet"
+                target="_blank"
+                style="text-decoration: none"
+                rel="noopener"
+              >
+                <button class="w3-button w3-round-xlarge w3-aqua w3-block">
+                  VIEW PROJECT
+                </button></a
+              >
+            </p>
           </div>
-        </div>
-      </div>
+        </article>
 
-      <div class="w3-third w3-margin-bottom">
-        <div class="w3-card-4">
-          <img src="images/athenerg.png" alt="athene" style="width:100%">
+        <article class="grid-card">
+          <img src="images/athenerg.png" alt="athene" style="width: 100%" />
           <div class="w3-container">
             <h3>Web Design</h3>
             <p class="w3-opacity">ATHENE RESEARCH GROUP</p>
-            <p>Utilising an existing theme, the Athene Research website is modelled to exhibit in detail its origin and its purpose while maintaining a steady and rich look. </p>
-            <p><a href="https://atheneresearch.com/" target="_blank" style="text-decoration: none" rel="noopener"> <button class="w3-button w3-round-xlarge w3-aqua w3-block"> VIEW PROJECT</button></a></p>
+            <p>
+              Utilising an existing theme, the Athene Research website is
+              modelled to exhibit in detail its origin and its purpose while
+              maintaining a steady and rich look.
+            </p>
+            <p>
+              <a
+                href="https://atheneresearch.com/"
+                target="_blank"
+                style="text-decoration: none"
+                rel="noopener"
+              >
+                <button class="w3-button w3-round-xlarge w3-aqua w3-block">
+                  VIEW PROJECT
+                </button></a
+              >
+            </p>
           </div>
-        </div>
+        </article>
       </div>
-    </div>
-   
-   
-   
-  
+    </section>
+
     <!--SERVICES-->
-    <br>
+    <br />
     <details id="Services">
-    <summary><h2 class="w3-wide">SERVICES</h2></summary>
-    <!--<hr>
-    <pre><p id="p1">Business Consulting                                                        Build a business model to increase revenue and a clear client retention strategy</p></pre>                                                     
-    <hr>
-    <pre><p id="p1">Marketing Design                                                           Learn how to communicate with your clientele through design and capture their attention </p></pre>
-     <hr>
-    <pre><p id="p1">Brand Identity                                                             Build your brand from scratch and let it stand out from the competition</p></pre>
-    <hr>
-    <pre><p id="p1">Marketing Strategy                                                         Understand the needs of the customer and create a distinct and sustainable competitive advantage</p></pre>
-    <hr>
-    <pre><p id="p1">Strategic Planning & Consulting                                        Establish clear objectives, assess your SWOT, and formulate a strategic POA to achieve those goals.</p></pre>                                                    
-    <hr>
-    <pre><p id="p1">Social Media Marketing                                                     Utilize the power of social media platforms to promote brands, products, and services</p></pre>
-     <hr>
-    <pre><p id="p1">Search Engine Optimization                                                 Enhance online visibility through the implementation of diverse techniques and strategies</p></pre>
-    <hr>
-    <pre><p id="p1">PPC Advertising                                                            Target specific audiences with their messages and generate leads efficiently and effectively</p></pre>
-    <hr>
-    -->
+      <summary><h2 class="w3-wide">SERVICES</h2></summary>
 
-    <!--column cards for the services-->
-<div class="row">
-
-  <div class="column">
-    <div class="w3-hover-shadow card" id="cardservices">
-      <span>
-        <img class="img-responsive" style="width:50px;height:50px;" src="images/bc.png" alt="sp">
-      </span>
-      <h3>Business Strategy</h3>
-      <p id="work_model">Create a plan that outlines how your company will achieve its goals, compete effectively, and optimize resources for growth.</p>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="w3-hover-shadow card" id="cardservices">
-      <span>
-        <img class="img-responsive" style="width:50px;height:50px;" src="images/marketingdesign.png" alt="md">
-      </span>
-      <h3>Market Research</h3>
-      <p id="work_model">Gathering and analyzing data about consumers and competitors to inform decisions, identify opportunities, and reduce risks</p>
-    </div>
-  </div>
-  
-  <div class="column">
-    <div class="w3-hover-shadow card" id="cardservices">
-      <span>
-        <img class="img-responsive" style="width:50px;height:50px;" src="images/brandidentity.png" alt="bi">
-      </span>
-      <h3>Brand Identity</h3>
-      <p id="work_model">The visual & emotional elements, including its logo, colors and messaging, which represent a brand and distinguish it from competitors.</p>
-    </div>
-  </div>
-  
-  <div class="column">
-    <div class="w3-hover-shadow card" id="cardservices">
-      <span>
-        <img class="img-responsive" style="width:50px;height:50px;" src="images/marketing strategy.png" alt="ms">
-      </span>
-      <h3>Marketing Strategy</h3>
-      <p id="work_model">Develop a plan that outlines how your business will promote its products or services to reach target customers and achieve marketing goals.</p>
-    </div>
-  </div>
-</div>
-
-<!--column cards for the services2-->
-<p>
-<div class="row">
-  <div class="column">
-    <div class="w3-hover-shadow card" id="cardservices">
-      <span>
-        <img class="img-responsive" style="width:50px;height:50px;" src="images/sp.png" alt="sp">
-      </span>
-      <h3>Strategic Planning & Consulting</h3>
-      <p id="work_model">Guide your businesses in setting goals, optimizing resources, and making informed decisions for sustainable growth and success.</p>
-    </div>
-  </div>
-  
-
-  <div class="column">
-    <div class="w3-hover-shadow card" id="cardservices">
-      <span>
-        <img class="img-responsive" style="width:50px;height:50px;" src="images/socialmedia.png" alt="smedia">
-      </span>
-      <h3>Social Media Marketing</h3>
-      <p id="work_model">Engaging audiences on social platforms boosts brand awareness, drives website traffic, and fosters customer relationships for increased sales.</p>
-    </div>
-  </div>
-  
-  <div class="column">
-    <div class="w3-hover-shadow card" id="cardservices">
-      <span>
-        <img class="img-responsive" style="width:50px;height:50px;" src="images/seo.png" alt="seo">
-      </span>
-      <h3>Search Engine Optimization</h3>
-      <p id="work_model">SEO improves website visibility in search results, driving organic traffic and enhancing long-term online presence and credibility.</p>
-    </div>
-  </div>
-  
-  <div class="column">
-    <div class="w3-hover-shadow card" id="cardservices">
-      <span>
-        <img class="img-responsive" style="width:50px;height:50px;" src="images/ppc.png" alt="ppc">
-      </span>
-      <h3>Pay-per-click(PPC) Advertising</h3>
-      <p id="work_model">PPC increases website traffic, boosts visibility, and generates leads, leading to higher sales and a strong return on investment.</p>
-    </div>
-  </div>
-</div>
-</p>
-
-<!--column cards for the services3-->
-<p>
-  <div class="column">
-    <div class="w3-hover-shadow card" id="cardservices">
-      <span>
-        <img class="img-responsive" style="width:50px;height:50px;" src="images/ui ux.png" alt="sp">
-      </span>
-      <h3>UI/UX Design</h3>
-      <p id="work_model">Creating user interfaces and enhancing user experiences to ensure products are intuitive, engaging, and easy to use.</p>
-    </div>
-  </div>
-    
-  
-    <div class="column">
-      <div class="w3-hover-shadow card" id="cardservices">
-        <span>
-          <img class="img-responsive" style="width:50px;height:50px;" src="images/analytics.png" alt="smedia">
-        </span>
-        <h3>Analytics and Reporting</h3>
-        <p id="work_model">Collection, analysis, and presentation of data to measure performance, identify trends, and support informed decision-making.</p>
-      </div>
-    </div>
-    
-    <div class="column">
-      <div class="w3-hover-shadow card" id="cardservices">
-        <span>
-          <img class="img-responsive" style="width:50px;height:50px;" src="images/process improvement.png" alt="seo">
-        </span>
-        <h3>Process Improvement</h3>
-        <p id="work_model">Analyzing and enhancing business processes to increase efficiency, reduce costs, and improve overall performance.</p>
-      </div>
-    </div>
-    
-    <div class="column">
-      <div class="w3-hover-shadow card" id="cardservices">
-        <span>
-          <img class="img-responsive" style="width:50px;height:50px;" src="images/project management.png" alt="ppc">
-        </span>
-        <h3>Project Mgmt & Executioin</h3>
-        <p id="work_model">Planning, organizing, and overseeing projects to ensure they are completed on time, within scope, and within budget.</p>
-      </div>
-    </div>
-  </div>
-  </p>
-</details>
-<br>
-
-  <!-- Contact -->
-  <div class="w3-white" id="contact_form">
-    <div class="w3-container w3-padding-32">
-      <div class="w3-center w3-padding-32">
-        <h2 class="w3-wide">CONTACT US</h2>
-        <p class="w3-opacity"><i>Book a session or just send us a message</i></p>
-      </div>
-
-      <form id="contact-form">
-        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="from_name"></p>
-        <p><input class="w3-input w3-padding-16 w3-border" type="email" placeholder="Email" required name="from_email"></p>
-        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Describe Service" required name="service"></p>
-        <p><input class="w3-input w3-padding-16 w3-border" type="date" placeholder="Date and time" required name="date" id="date"></p>
-        <p><textarea class="w3-input w3-padding-16 w3-border" placeholder="Message" required name="message"></textarea></p>
-        <p><button type="submit" class="w3-button w3-round-xlarge w3-aqua w3-padding-large w3-large w3-hover-opacity-off">Submit</button></p>
-      </form>
-    </div>
-  </div>
-
-
-  <!--The date is set to the current date-->
-  <script>
-    var today = new Date().toISOString().split('T')[0];
-    document.getElementById("date").setAttribute("min", today);
-  </script>
-  
-  <!--EmailJs-->
-  <script type="text/javascript">
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
-      event.preventDefault();
-
-      emailjs.sendForm('gmail_service', 'contact_form', this)
-        .then(function(response) {
-          console.log('SUCCESS!', response.status, response.text);
-          alert('✨Your message has been sent successfully!');
-          window.location.reload();
-        }, function(error) {
-          console.log('FAILED...', error);
-          alert('⚠️Failed to send the message, please try again later!');
-        });
-    });
-  </script>
-
-  <!-- Footer section-->
-  <footer class="w3-container w3-pale-blue w3-center w3-margin-top">
-    <p>Find us on our socials 👍 </p>
-
-        <div class="nfooter" id="footer"> 
-            <a href="https://www.linkedin.com/in/swaleh-mwanza-939306101" aria-label="linkedin" rel="noopener" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a> &nbsp&nbsp;
-            <a href="mailto:swalehmwanza@gmail.com"><i class="fa fa-envelope"> E-Mail</i></a> &nbsp&nbsp;
-            <a href="tel:+254724500654"><i class="fa fa-phone-square">  +254724500654 </i></a>
-            <h6>© 2024. Swatch Media. All rights reserved.</h6>
+      <section class="grid-cards-container">
+        <!-- card -->
+        <div class="w3-hover-shadow card" id="cardservices">
+          <span>
+            <img
+              class="img-responsive"
+              style="width: 50px; height: 50px"
+              src="images/bc.png"
+              alt="sp"
+            />
+          </span>
+          <h3>Business Strategy</h3>
+          <p id="work_model">
+            Create a plan that outlines how your company will achieve its goals,
+            compete effectively, and optimize resources for growth.
+          </p>
         </div>
-                    
-  </footer>
 
-  <!--scroll restoration on reload-->
-  <script>
-    if (history.scrollRestoration) {
-      history.scrollRestoration = 'manual';
-    } else {
-      window.onload = function () {
-        window.scrollTo(0, 0);
-      }
-    }
+        <!-- card -->
+        <div class="w3-hover-shadow card" id="cardservices">
+          <span>
+            <img
+              class="img-responsive"
+              style="width: 50px; height: 50px"
+              src="images/marketingdesign.png"
+              alt="md"
+            />
+          </span>
+          <h3>Market Research</h3>
+          <p id="work_model">
+            Gathering and analyzing data about consumers and competitors to
+            inform decisions, identify opportunities, and reduce risks
+          </p>
+        </div>
 
-  </script>
-  
-  <!--scroll restoration on click-->
-  <script>
+        <!-- card -->
+        <div class="w3-hover-shadow card" id="cardservices">
+          <span>
+            <img
+              class="img-responsive"
+              style="width: 50px; height: 50px"
+              src="images/brandidentity.png"
+              alt="bi"
+            />
+          </span>
+          <h3>Brand Identity</h3>
+          <p id="work_model">
+            The visual & emotional elements, including its logo, colors and
+            messaging, which represent a brand and distinguish it from
+            competitors.
+          </p>
+        </div>
 
-    const mybutton = document.getElementById("myBtn");
+        <!-- card -->
+        <div class="w3-hover-shadow card" id="cardservices">
+          <span>
+            <img
+              class="img-responsive"
+              style="width: 50px; height: 50px"
+              src="images/marketing strategy.png"
+              alt="ms"
+            />
+          </span>
+          <h3>Marketing Strategy</h3>
+          <p id="work_model">
+            Develop a plan that outlines how your business will promote its
+            products or services to reach target customers and achieve marketing
+            goals.
+          </p>
+        </div>
 
-    window.onscroll = () => {
-      mybutton.style.display = (document.documentElement.scrollTop > 20) ? "block" : "none";
-    };
+        <!-- card -->
+        <div class="w3-hover-shadow card" id="cardservices">
+          <span>
+            <img
+              class="img-responsive"
+              style="width: 50px; height: 50px"
+              src="images/sp.png"
+              alt="sp"
+            />
+          </span>
+          <h3>Strategic Planning & Consulting</h3>
+          <p id="work_model">
+            Guide your businesses in setting goals, optimizing resources, and
+            making informed decisions for sustainable growth and success.
+          </p>
+        </div>
 
-    const topFunction = () => {
-      document.documentElement.scrollTop = 0;
-    }
+        <!-- card -->
+        <div class="w3-hover-shadow card" id="cardservices">
+          <span>
+            <img
+              class="img-responsive"
+              style="width: 50px; height: 50px"
+              src="images/socialmedia.png"
+              alt="smedia"
+            />
+          </span>
+          <h3>Social Media Marketing</h3>
+          <p id="work_model">
+            Engaging audiences on social platforms boosts brand awareness,
+            drives website traffic, and fosters customer relationships for
+            increased sales.
+          </p>
+        </div>
 
-  </script>
+        <!-- card -->
+        <div class="w3-hover-shadow card" id="cardservices">
+          <span>
+            <img
+              class="img-responsive"
+              style="width: 50px; height: 50px"
+              src="images/seo.png"
+              alt="seo"
+            />
+          </span>
+          <h3>Search Engine Optimization</h3>
+          <p id="work_model">
+            SEO improves website visibility in search results, driving organic
+            traffic and enhancing long-term online presence and credibility.
+          </p>
+        </div>
 
-<script>
-  function toggleMenu() {
-      var x = document.getElementById("hamburger");
-      if (x.classList.contains("w3-hide")) {
-          x.classList.remove("w3-hide");
+        <!-- card -->
+        <div class="w3-hover-shadow card" id="cardservices">
+          <span>
+            <img
+              class="img-responsive"
+              style="width: 50px; height: 50px"
+              src="images/ppc.png"
+              alt="ppc"
+            />
+          </span>
+          <h3>Pay-per-click(PPC) Advertising</h3>
+          <p id="work_model">
+            PPC increases website traffic, boosts visibility, and generates
+            leads, leading to higher sales and a strong return on investment.
+          </p>
+        </div>
+
+        <!-- card -->
+        <div class="w3-hover-shadow card" id="cardservices">
+          <span>
+            <img
+              class="img-responsive"
+              style="width: 50px; height: 50px"
+              src="images/ui ux.png"
+              alt="sp"
+            />
+          </span>
+          <h3>UI/UX Design</h3>
+          <p id="work_model">
+            Creating user interfaces and enhancing user experiences to ensure
+            products are intuitive, engaging, and easy to use.
+          </p>
+        </div>
+
+        <!-- card -->
+        <div class="w3-hover-shadow card" id="cardservices">
+          <span>
+            <img
+              class="img-responsive"
+              style="width: 50px; height: 50px"
+              src="images/analytics.png"
+              alt="smedia"
+            />
+          </span>
+          <h3>Analytics and Reporting</h3>
+          <p id="work_model">
+            Collection, analysis, and presentation of data to measure
+            performance, identify trends, and support informed decision-making.
+          </p>
+        </div>
+
+        <!-- card -->
+        <div class="w3-hover-shadow card" id="cardservices">
+          <span>
+            <img
+              class="img-responsive"
+              style="width: 50px; height: 50px"
+              src="images/process improvement.png"
+              alt="seo"
+            />
+          </span>
+          <h3>Process Improvement</h3>
+          <p id="work_model">
+            Analyzing and enhancing business processes to increase efficiency,
+            reduce costs, and improve overall performance.
+          </p>
+        </div>
+
+        <!-- card -->
+        <div class="w3-hover-shadow card" id="cardservices">
+          <span>
+            <img
+              class="img-responsive"
+              style="width: 50px; height: 50px"
+              src="images/project management.png"
+              alt="ppc"
+            />
+          </span>
+          <h3>Project Mgmt & Executioin</h3>
+          <p id="work_model">
+            Planning, organizing, and overseeing projects to ensure they are
+            completed on time, within scope, and within budget.
+          </p>
+        </div>
+      </section>
+    </details>
+    <br />
+
+    <!-- Contact -->
+    <div class="w3-white" id="contact_form">
+      <div class="w3-container w3-padding-32">
+        <div class="w3-center w3-padding-32">
+          <h2 class="w3-wide">CONTACT US</h2>
+          <p class="w3-opacity">
+            <i>Book a session or just send us a message</i>
+          </p>
+        </div>
+
+        <form id="contact-form">
+          <p>
+            <input
+              class="w3-input w3-padding-16 w3-border"
+              type="text"
+              placeholder="Name"
+              required
+              name="from_name"
+            />
+          </p>
+          <p>
+            <input
+              class="w3-input w3-padding-16 w3-border"
+              type="email"
+              placeholder="Email"
+              required
+              name="from_email"
+            />
+          </p>
+          <p>
+            <input
+              class="w3-input w3-padding-16 w3-border"
+              type="text"
+              placeholder="Describe Service"
+              required
+              name="service"
+            />
+          </p>
+          <p>
+            <input
+              class="w3-input w3-padding-16 w3-border"
+              type="date"
+              placeholder="Date and time"
+              required
+              name="date"
+              id="date"
+            />
+          </p>
+          <p>
+            <textarea
+              class="w3-input w3-padding-16 w3-border"
+              placeholder="Message"
+              required
+              name="message"
+            ></textarea>
+          </p>
+          <p>
+            <button
+              type="submit"
+              class="w3-button w3-round-xlarge w3-aqua w3-padding-large w3-large w3-hover-opacity-off"
+            >
+              Submit
+            </button>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <!--The date is set to the current date-->
+    <script>
+      var today = new Date().toISOString().split("T")[0];
+      document.getElementById("date").setAttribute("min", today);
+    </script>
+
+    <!--EmailJs-->
+    <script type="text/javascript">
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          emailjs.sendForm("gmail_service", "contact_form", this).then(
+            function (response) {
+              console.log("SUCCESS!", response.status, response.text);
+              alert("✨Your message has been sent successfully!");
+              window.location.reload();
+            },
+            function (error) {
+              console.log("FAILED...", error);
+              alert("⚠️Failed to send the message, please try again later!");
+            }
+          );
+        });
+    </script>
+
+    <!-- Footer section-->
+    <footer class="w3-container w3-pale-blue w3-center w3-margin-top">
+      <p>Find us on our socials 👍</p>
+
+      <div class="nfooter" id="footer">
+        <a
+          href="https://www.linkedin.com/in/swaleh-mwanza-939306101"
+          aria-label="linkedin"
+          rel="noopener"
+          target="_blank"
+          ><i class="fa fa-linkedin" aria-hidden="true"></i
+        ></a>
+        &nbsp&nbsp;
+        <a href="mailto:swalehmwanza@gmail.com"
+          ><i class="fa fa-envelope"> E-Mail</i></a
+        >
+        &nbsp&nbsp;
+        <a href="tel:+254724500654"
+          ><i class="fa fa-phone-square"> +254724500654 </i></a
+        >
+        <h6>© 2024. Swatch Media. All rights reserved.</h6>
+      </div>
+    </footer>
+
+    <!--scroll restoration on reload-->
+    <script>
+      if (history.scrollRestoration) {
+        history.scrollRestoration = "manual";
       } else {
-          x.classList.add("w3-hide");
+        window.onload = function () {
+          window.scrollTo(0, 0);
+        };
       }
-  }
-  </script>
+    </script>
 
-  <!--scroll button-->
-  <br><button onclick="topFunction()" type="submit" id="myBtn" title="Go to top"><img src="images/up.svg" alt="top" width="18" height-="18"></button>
+    <!--scroll restoration on click-->
+    <script>
+      const mybutton = document.getElementById("myBtn");
 
-</body>
+      window.onscroll = () => {
+        mybutton.style.display =
+          document.documentElement.scrollTop > 20 ? "block" : "none";
+      };
 
+      const topFunction = () => {
+        document.documentElement.scrollTop = 0;
+      };
+    </script>
+
+    <script>
+      function toggleMenu() {
+        var x = document.getElementById("hamburger");
+        if (x.classList.contains("w3-hide")) {
+          x.classList.remove("w3-hide");
+        } else {
+          x.classList.add("w3-hide");
+        }
+      }
+    </script>
+
+    <!--scroll button-->
+    <br /><button
+      onclick="topFunction()"
+      type="submit"
+      id="myBtn"
+      title="Go to top"
+    >
+      <img src="images/up.svg" alt="top" width="18" height-="18" />
+    </button>
+  </body>
 </html>
