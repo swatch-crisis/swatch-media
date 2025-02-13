@@ -269,3 +269,12 @@ details[open] summary:after {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  width: 0%;
+  height: 4px;
+  background: #1484cd;
+  z-index: 10000;
+}

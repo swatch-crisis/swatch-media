@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 99,
+            "activePatchIndex": 100,
             "patches": [
                 {
                     "date": 1718804050870,
@@ -404,6 +404,10 @@
                 {
                     "date": 1723700496738,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -226,9 +226,9 @@\n }\n \n #contactus{\n   background-color: #fff; /* Background color */\n-  border: 2px solid #4CAF50; /* Border color and thickness */\n+  border: 2px solid #000000; /* Border color and thickness */\n   border-radius: 5px;\n   color: rgb(0, 0, 0); /* Text color */\n   padding: 10px 24px; /* Padding inside the button */\n   text-align: center; /* Center the text */\n"
+                },
+                {
+                    "date": 1739441953541,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -268,4 +268,13 @@\n   .grid-cards-container {\n     grid-template-columns: repeat(1, 1fr);\n   }\n }\n+\n+#scroll-progress {\n+  position: fixed;\n+  top: 0;\n+  width: 0%;\n+  height: 4px;\n+  background: #7983ff;\n+  z-index: 10000;\n+}\n"
                 }
             ],
             "date": 1718804050870,

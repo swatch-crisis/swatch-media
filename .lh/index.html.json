@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 298,
+            "activePatchIndex": 315,
             "patches": [
                 {
                     "date": 1718543110408,
@@ -1200,6 +1200,74 @@
                 {
                     "date": 1737105709525,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -188,9 +188,8 @@\n     <!-- Portfolio section -->\n     <section class=\"w3-row-padding\" id=\"Portfolio\">\n       <div class=\"w3-center w3-padding-32\">\n         <h2 class=\"w3-wide w3-center\">PORTFOLIO</h2>\n-        <p class=\"w3-opacity w3-center\"><i>Previous Works</i></p>\n         <br />\n         <p class=\"w3-white w3-text-black w3-center-align\">\n           Swatch Media began as a graphics and web design firm dedicated to providing a professional online presence. We have since expanded our services to include offline branding and marketing solutions. Our primary focus lies in Branding, Marketing, and Business Consultancy.\n \n@@ -199,8 +198,10 @@\n           Our goal is to understand and address the needs of an increasingly dynamic economy, enabling us to meet and exceed the expectations of our current and future clients.\n         </p>\n       </div>\n \n+      <p class=\"w3-opacity w3-center\"><i>Previous Works</i></p>\n+\n       <div class=\"grid-cards-container\">\n         <article class=\"grid-card\">\n           <img src=\"images/heb.png\" alt=\"heb\" style=\"width: 100%\" />\n           <div class=\"w3-container\">\n"
+                },
+                {
+                    "date": 1737186465081,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -191,11 +191,9 @@\n         <h2 class=\"w3-wide w3-center\">PORTFOLIO</h2>\n         <br />\n         <p class=\"w3-white w3-text-black w3-center-align\">\n           Swatch Media began as a graphics and web design firm dedicated to providing a professional online presence. We have since expanded our services to include offline branding and marketing solutions. Our primary focus lies in Branding, Marketing, and Business Consultancy.\n-\n-          Our team is driven by passion and expertise, ensuring that we approach each project with the utmost professionalism. We collaborate with both companies and individuals, particularly startups aiming to establish and promote their brands. We pride ourselves on being a creative and results-oriented team, adept at prioritizing tasks and providing clear direction in a fast-paced environment.\n-          \n+          Our team is driven by passion and expertise, ensuring that we approach each project with the utmost professionalism. We collaborate with both companies and individuals, particularly startups aiming to establish and promote their brands. We pride ourselves on being a creative and results-oriented team, adept at prioritizing tasks and providing clear direction in a fast-paced environment.          \n           Our goal is to understand and address the needs of an increasingly dynamic economy, enabling us to meet and exceed the expectations of our current and future clients.\n         </p>\n       </div>\n \n@@ -356,9 +354,9 @@\n     <!--SERVICES-->\n     <br />\n     <details id=\"Services\">\n       <summary><h2 class=\"w3-wide\">SERVICES</h2></summary>\n-\n+      <summary><h2 class=\"w3-wide\">Press me!</h2></summary>\n       <section class=\"grid-cards-container\">\n         <!-- card -->\n         <div class=\"w3-hover-shadow card\" id=\"cardservices\">\n           <span>\n"
+                },
+                {
+                    "date": 1737186513222,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -354,9 +354,9 @@\n     <!--SERVICES-->\n     <br />\n     <details id=\"Services\">\n       <summary><h2 class=\"w3-wide\">SERVICES</h2></summary>\n-      <summary><h2 class=\"w3-wide\">Press me!</h2></summary>\n+      <p><h2 class=\"w3-wide\">Press me!</h2></p>\n       <section class=\"grid-cards-container\">\n         <!-- card -->\n         <div class=\"w3-hover-shadow card\" id=\"cardservices\">\n           <span>\n"
+                },
+                {
+                    "date": 1737186549162,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -353,10 +353,10 @@\n \n     <!--SERVICES-->\n     <br />\n     <details id=\"Services\">\n+      <p><h2 class=\"w3-wide\">Press me!</h2></p>\n       <summary><h2 class=\"w3-wide\">SERVICES</h2></summary>\n-      <p><h2 class=\"w3-wide\">Press me!</h2></p>\n       <section class=\"grid-cards-container\">\n         <!-- card -->\n         <div class=\"w3-hover-shadow card\" id=\"cardservices\">\n           <span>\n"
+                },
+                {
+                    "date": 1737186578561,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -352,10 +352,10 @@\n     </section>\n \n     <!--SERVICES-->\n     <br />\n+    <p><h2 class=\"w3-wide\">Press me!</h2></p>\n     <details id=\"Services\">\n-      <p><h2 class=\"w3-wide\">Press me!</h2></p>\n       <summary><h2 class=\"w3-wide\">SERVICES</h2></summary>\n       <section class=\"grid-cards-container\">\n         <!-- card -->\n         <div class=\"w3-hover-shadow card\" id=\"cardservices\">\n"
+                },
+                {
+                    "date": 1737186600821,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -352,9 +352,8 @@\n     </section>\n \n     <!--SERVICES-->\n     <br />\n-    <p><h2 class=\"w3-wide\">Press me!</h2></p>\n     <details id=\"Services\">\n       <summary><h2 class=\"w3-wide\">SERVICES</h2></summary>\n       <section class=\"grid-cards-container\">\n         <!-- card -->\n"
+                },
+                {
+                    "date": 1737186682589,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -352,8 +352,9 @@\n     </section>\n \n     <!--SERVICES-->\n     <br />\n+    <p><h2 class=\"center\">Press me!</h2></p>\n     <details id=\"Services\">\n       <summary><h2 class=\"w3-wide\">SERVICES</h2></summary>\n       <section class=\"grid-cards-container\">\n         <!-- card -->\n"
+                },
+                {
+                    "date": 1737186689873,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -352,9 +352,9 @@\n     </section>\n \n     <!--SERVICES-->\n     <br />\n-    <p><h2 class=\"center\">Press me!</h2></p>\n+    <p><h6 class=\"center\">Press me!</h6></p>\n     <details id=\"Services\">\n       <summary><h2 class=\"w3-wide\">SERVICES</h2></summary>\n       <section class=\"grid-cards-container\">\n         <!-- card -->\n"
+                },
+                {
+                    "date": 1737186771675,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -352,10 +352,9 @@\n     </section>\n \n     <!--SERVICES-->\n     <br />\n-    <p><h6 class=\"center\">Press me!</h6></p>\n-    <details id=\"Services\">\n+    <details id=\"Services\", \"center\">Press me!</h6></p>>\n       <summary><h2 class=\"w3-wide\">SERVICES</h2></summary>\n       <section class=\"grid-cards-container\">\n         <!-- card -->\n         <div class=\"w3-hover-shadow card\" id=\"cardservices\">\n"
+                },
+                {
+                    "date": 1737186788440,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -352,9 +352,9 @@\n     </section>\n \n     <!--SERVICES-->\n     <br />\n-    <details id=\"Services\", \"center\">Press me!</h6></p>>\n+    <details id=\"Services\">\n       <summary><h2 class=\"w3-wide\">SERVICES</h2></summary>\n       <section class=\"grid-cards-container\">\n         <!-- card -->\n         <div class=\"w3-hover-shadow card\" id=\"cardservices\">\n"
+                },
+                {
+                    "date": 1737186844562,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -351,9 +351,8 @@\n       </div>\n     </section>\n \n     <!--SERVICES-->\n-    <br />\n     <details id=\"Services\">\n       <summary><h2 class=\"w3-wide\">SERVICES</h2></summary>\n       <section class=\"grid-cards-container\">\n         <!-- card -->\n"
+                },
+                {
+                    "date": 1737187223605,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -562,9 +562,8 @@\n           </p>\n         </div>\n       </section>\n     </details>\n-    <br />\n \n     <!-- Contact -->\n     <div class=\"w3-white\" id=\"contact_form\">\n       <div class=\"w3-container w3-padding-32\">\n"
+                },
+                {
+                    "date": 1737187388353,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -500,9 +500,9 @@\n             <img\n               class=\"img-responsive\"\n               style=\"width: 50px; height: 50px\"\n               src=\"images/ui ux.png\"\n-              alt=\"sp\"\n+              alt=\"ui/ux\"\n             />\n           </span>\n           <h3>UI/UX Design</h3>\n           <p id=\"work_model\">\n@@ -517,9 +517,9 @@\n             <img\n               class=\"img-responsive\"\n               style=\"width: 50px; height: 50px\"\n               src=\"images/analytics.png\"\n-              alt=\"smedia\"\n+              alt=\"analytics\"\n             />\n           </span>\n           <h3>Analytics and Reporting</h3>\n           <p id=\"work_model\">\n@@ -534,9 +534,9 @@\n             <img\n               class=\"img-responsive\"\n               style=\"width: 50px; height: 50px\"\n               src=\"images/process improvement.png\"\n-              alt=\"seo\"\n+              alt=\"pi\"\n             />\n           </span>\n           <h3>Process Improvement</h3>\n           <p id=\"work_model\">\n@@ -551,9 +551,9 @@\n             <img\n               class=\"img-responsive\"\n               style=\"width: 50px; height: 50px\"\n               src=\"images/project management.png\"\n-              alt=\"ppc\"\n+              alt=\"pme\"\n             />\n           </span>\n           <h3>Project Mgmt & Executioin</h3>\n           <p id=\"work_model\">\n"
+                },
+                {
+                    "date": 1737187434459,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -361,9 +361,9 @@\n             <img\n               class=\"img-responsive\"\n               style=\"width: 50px; height: 50px\"\n               src=\"images/bc.png\"\n-              alt=\"sp\"\n+              alt=\"bs\"\n             />\n           </span>\n           <h3>Business Strategy</h3>\n           <p id=\"work_model\">\n@@ -378,9 +378,9 @@\n             <img\n               class=\"img-responsive\"\n               style=\"width: 50px; height: 50px\"\n               src=\"images/marketingdesign.png\"\n-              alt=\"md\"\n+              alt=\"mr\"\n             />\n           </span>\n           <h3>Market Research</h3>\n           <p id=\"work_model\">\n"
+                },
+                {
+                    "date": 1739262925430,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -184,8 +184,14 @@\n         </div>\n       </header>\n     </div>\n \n+    <div id=\"progressContainer\" style=\"display: block;\">\n+      <div class=\"progress-container\">\n+        <div class=\"progress-bar\" id=\"progressBar\" style=\"width: 64.4495%;\"></div>\n+      </div>\n+    </div>\n+\n     <!-- Portfolio section -->\n     <section class=\"w3-row-padding\" id=\"Portfolio\">\n       <div class=\"w3-center w3-padding-32\">\n         <h2 class=\"w3-wide w3-center\">PORTFOLIO</h2>\n"
+                },
+                {
+                    "date": 1739263138262,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -184,14 +184,8 @@\n         </div>\n       </header>\n     </div>\n \n-    <div id=\"progressContainer\" style=\"display: block;\">\n-      <div class=\"progress-container\">\n-        <div class=\"progress-bar\" id=\"progressBar\" style=\"width: 64.4495%;\"></div>\n-      </div>\n-    </div>\n-\n     <!-- Portfolio section -->\n     <section class=\"w3-row-padding\" id=\"Portfolio\">\n       <div class=\"w3-center w3-padding-32\">\n         <h2 class=\"w3-wide w3-center\">PORTFOLIO</h2>\n"
+                },
+                {
+                    "date": 1739441919212,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -152,8 +152,10 @@\n         >CONTACT US</a\n       >\n     </div>\n \n+    <div id=\"scroll-progress\"></div>\n+\n     <div class=\"w3-content\" style=\"max-width: 1600px\">\n       <!-- Image header -->\n       <header\n         class=\"w3-display-container w3-wide\"\n@@ -718,8 +720,22 @@\n         }\n       }\n     </script>\n \n+    <script>\n+\n+const scrollProgress = document.getElementById(\"scroll-progress\");\n+const height =\n+  document.documentElement.scrollHeight - document.documentElement.clientHeight;\n+\n+window.addEventListener(\"scroll\", () => {\n+  const scrollTop =\n+    document.body.scrollTop || document.documentElement.scrollTop;\n+  scrollProgress.style.width = `${(scrollTop / height) * 100}%`;\n+});\n+\n+    </script>\n+\n     <!--scroll button-->\n     <br /><button\n       onclick=\"topFunction()\"\n       type=\"submit\"\n"
+                },
+                {
+                    "date": 1739442509794,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -735,9 +735,9 @@\n \n     </script>\n \n     <!--scroll button-->\n-    <br /><button\n+    <button\n       onclick=\"topFunction()\"\n       type=\"submit\"\n       id=\"myBtn\"\n       title=\"Go to top\"\n"
                 }
             ],
             "date": 1718543110408,
