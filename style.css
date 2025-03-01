@@ -71,7 +71,7 @@ td {
 hr {
   height: 3px;
   border-width: 0;
-  background-color: #00ffff;
+  background-color: rgb(0, 255, 255);
 }
 
 #p1 {
