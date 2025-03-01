@@ -81,7 +81,7 @@ hr {
 #Services {
   text-align: center;
   padding-top: 30px;
-  padding-bottom: 5px;
+  padding-bottom: 15px;
 }
 
 details > summary {
@@ -300,6 +300,6 @@ details[open] summary:after {
   top: 0;
   width: 0%;
   height: 4px;
-  background: #1484cd;
+  background: rgb(0, 255, 255);
   z-index: 10000;
 }

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 343,
+            "activePatchIndex": 344,
             "patches": [
                 {
                     "date": 1718543110408,
@@ -1380,6 +1380,10 @@
                 {
                     "date": 1740831116694,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -193,9 +193,9 @@\n         <h2 class=\"w3-wide w3-center\">PORTFOLIO</h2>\n         <br />\n         <p class=\"w3-white w3-text-black w3-center-align\">\n           Swatch Media began as a graphics and web design firm dedicated to providing a professional online presence. We have since expanded our services to include offline branding and marketing solutions. Our primary focus lies in Branding, Marketing, and Business Consultancy.\n-          Our team is driven by passion and expertise, ensuring that we approach each project with the utmost professionalism. We collaborate with both companies and individuals, particularly startups aiming to establish and promote their brands. We pride ourselves on being a creative and results-oriented team, adept at prioritizing tasks and providing clear direction in a fast-paced environment.          \n+          Our team is driven by passion and expertise, ensuring that each project is approached with the utmost professionalism. We collaborate with companies and individuals, particularly startups aiming to establish and promote their brands. We pride ourselves on being a creative and results-oriented team, adept at prioritizing tasks and providing a clear direction in a fast-paced environment.          \n           Our goal is to understand and address the needs of an increasingly dynamic economy, enabling us to meet and exceed the expectations of our current and future clients.\n         </p>\n       </div>\n \n"
+                },
+                {
+                    "date": 1740849326581,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -770,9 +770,9 @@\n           src=\"images/project management.png\"\n           alt=\"pme\"\n         />\n       </span>\n-      <h3>Project Mgmt & Executioin</h3>\n+      <h3>Project Mgmt & Execution</h3>\n       <p>\n         Planning, organizing, and overseeing projects to ensure they are\n         completed on time, within scope, and within budget.\n       </p>\n"
                 }
             ],
             "date": 1718543110408,
