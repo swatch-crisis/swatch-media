@@ -79,8 +79,9 @@ hr {
 }
 
 #Services {
-  padding: 10px;
   text-align: center;
+  padding-top: 30px;
+  padding-bottom: 5px;
 }
 
 details > summary {
@@ -90,7 +91,7 @@ details > summary {
 summary::-webkit-details-marker {
   display: none;
 }
-
+/*
 summary::after {
   content: " 👇";
   font-size: 2.5rem;
@@ -99,7 +100,7 @@ summary::after {
 details[open] summary:after {
   content: " ☝️";
 }
-
+*/
 * {
   box-sizing: border-box;
 }
@@ -251,6 +252,30 @@ details[open] summary:after {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+}
+
+.grid-cards-container1 {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent wrapping of the divs */
+  padding: 10px;
+}
+
+#cardservices {
+  min-width: 350px; /* Set a minimum width for each div */
+  height: auto; /* Allow height to adjust based on content */
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  margin-right: 10px; /* Space between divs */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  box-sizing: border-box; /* Include padding in width calculation */
+  overflow: hidden; /* Hide overflow if necessary */
+  text-align: center; /* Center align text */
+  white-space: normal; /* Allow text to wrap */
 }
 
 .grid-card {
