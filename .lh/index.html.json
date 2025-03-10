@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 392,
+            "activePatchIndex": 399,
             "patches": [
                 {
                     "date": 1718543110408,
@@ -1576,6 +1576,34 @@
                 {
                     "date": 1741587519887,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -528,9 +528,9 @@\n       <span>\n         <img\n           class=\"img-responsive\"\n           style=\"width: 50px; height: 50px\"\n-          src=\"images2/bs.png\"\n+          src=\"images/bs.png\"\n           alt=\"bs\"  \n         />\n       </span>\n       <h3>Business Strategy</h3>\n"
+                },
+                {
+                    "date": 1741587745516,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -562,9 +562,9 @@\n       <span>\n         <img\n           class=\"img-responsive\"\n           style=\"width: 50px; height: 50px\"\n-          src=\"images/brandidentity.png\"\n+          src=\"images2/bi.png\"\n           alt=\"bi\"\n         />\n       </span>\n       <h3>Brand Identity</h3>\n"
+                },
+                {
+                    "date": 1741587877890,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -528,9 +528,9 @@\n       <span>\n         <img\n           class=\"img-responsive\"\n           style=\"width: 50px; height: 50px\"\n-          src=\"images/bs.png\"\n+          src=\"images2/bs.png\"\n           alt=\"bs\"  \n         />\n       </span>\n       <h3>Business Strategy</h3>\n"
+                },
+                {
+                    "date": 1741587948118,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -545,9 +545,9 @@\n       <span>\n         <img\n           class=\"img-responsive\"\n           style=\"width: 50px; height: 50px\"\n-          src=\"images/marketingdesign.png\"\n+          src=\"images2/mr.png\"\n           alt=\"mr\"\n         />\n       </span>\n       <h3>Market Research</h3>\n"
+                },
+                {
+                    "date": 1741587979370,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -580,9 +580,9 @@\n       <span>\n         <img\n           class=\"img-responsive\"\n           style=\"width: 50px; height: 50px\"\n-          src=\"images/marketing strategy.png\"\n+          src=\"images/ms.png\"\n           alt=\"ms\"\n         />\n       </span>\n       <h3>Marketing Strategy</h3>\n"
+                },
+                {
+                    "date": 1741587990948,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -580,9 +580,9 @@\n       <span>\n         <img\n           class=\"img-responsive\"\n           style=\"width: 50px; height: 50px\"\n-          src=\"images/ms.png\"\n+          src=\"images2/ms.png\"\n           alt=\"ms\"\n         />\n       </span>\n       <h3>Marketing Strategy</h3>\n"
+                },
+                {
+                    "date": 1741588008268,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -598,9 +598,9 @@\n       <span>\n         <img\n           class=\"img-responsive\"\n           style=\"width: 50px; height: 50px\"\n-          src=\"images/sp.png\"\n+          src=\"images2/sp.png\"\n           alt=\"sp\"\n         />\n       </span>\n       <h3>Strategic Planning & Consulting</h3>\n"
+                },
+                {
+                    "date": 1741588071142,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -615,9 +615,9 @@\n       <span>\n         <img\n           class=\"img-responsive\"\n           style=\"width: 50px; height: 50px\"\n-          src=\"images/socialmedia.png\"\n+          src=\"images2/smm.png\"\n           alt=\"smedia\"\n         />\n       </span>\n       <h3>Social Media Marketing</h3>\n@@ -633,9 +633,9 @@\n       <span>\n         <img\n           class=\"img-responsive\"\n           style=\"width: 50px; height: 50px\"\n-          src=\"images/seo.png\"\n+          src=\"images2/seo.png\"\n           alt=\"seo\"\n         />\n       </span>\n       <h3>Search Engine Optimization</h3>\n@@ -650,9 +650,9 @@\n       <span>\n         <img\n           class=\"img-responsive\"\n           style=\"width: 50px; height: 50px\"\n-          src=\"images/ppc.png\"\n+          src=\"images2/ppc.png\"\n           alt=\"ppc\"\n         />\n       </span>\n       <h3>Pay-per-click(PPC) Advertising</h3>\n@@ -667,9 +667,9 @@\n       <span>\n         <img\n           class=\"img-responsive\"\n           style=\"width: 50px; height: 50px\"\n-          src=\"images/ui ux.png\"\n+          src=\"images2/ui.png\"\n           alt=\"ui/ux\"\n         />\n       </span>\n       <h3>UI/UX Design</h3>\n@@ -684,9 +684,9 @@\n       <span>\n         <img\n           class=\"img-responsive\"\n           style=\"width: 50px; height: 50px\"\n-          src=\"images/analytics.png\"\n+          src=\"images2/analytics.png\"\n           alt=\"analytics\"\n         />\n       </span>\n       <h3>Analytics and Reporting</h3>\n@@ -701,9 +701,9 @@\n       <span>\n         <img\n           class=\"img-responsive\"\n           style=\"width: 50px; height: 50px\"\n-          src=\"images/process improvement.png\"\n+          src=\"images2/pi.png\"\n           alt=\"pi\"\n         />\n       </span>\n       <h3>Process Improvement</h3>\n@@ -718,9 +718,9 @@\n       <span>\n         <img\n           class=\"img-responsive\"\n           style=\"width: 50px; height: 50px\"\n-          src=\"images/project management.png\"\n+          src=\"images2/pm.png\"\n           alt=\"pme\"\n         />\n       </span>\n       <h3>Project Mgmt & Execution</h3>\n"
                 }
             ],
             "date": 1718543110408,
