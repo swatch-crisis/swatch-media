@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 400,
+            "activePatchIndex": 403,
             "patches": [
                 {
                     "date": 1718543110408,
@@ -1608,6 +1608,18 @@
                 {
                     "date": 1741669934024,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,10 +42,9 @@\n         height=\"60\"\n       />\n       <h2 class=\"w3-left w3-tag w3-white w3-round w3-black\">SWATCH MEDIA</h2>\n       <a\n-        href=\"#contact_form\"\n-        id=\"contactus\"\n+        href=\"#contact_form\" id=\"contactus\"\n         class=\"w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right\"\n         style=\"margin-top: 10px\"\n         >CONTACT US</a\n       >\n"
+                },
+                {
+                    "date": 1741670122693,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,41 +38,40 @@\n         src=\"images/slogo2022.jpg\"\n         class=\"w3-left\"\n         alt=\"Logo\"\n         width=\"60\"\n-        height=\"60\"\n-      />\n+        height=\"60\"/>\n+\n       <h2 class=\"w3-left w3-tag w3-white w3-round w3-black\">SWATCH MEDIA</h2>\n+\n       <a\n         href=\"#contact_form\" id=\"contactus\"\n         class=\"w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right\"\n         style=\"margin-top: 10px\"\n-        >CONTACT US</a\n-      >\n+        >CONTACT US</a>\n       <a\n         href=\"#Services\"\n         class=\"w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right\"\n         style=\"margin-top: 10px\"\n-        >SERVICES</a\n-      >\n+        >SERVICES</a>\n+\n       <a\n         href=\"#Portfolio\"\n         class=\"w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right\"\n         style=\"margin-top: 10px\"\n-        >PORTFOLIO</a\n-      >\n+        >PORTFOLIO</a>\n+\n       <a\n         href=\"#Home\"\n         class=\"w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right\"\n         style=\"margin-top: 10px\"\n-        >HOME</a\n-      >\n+        >HOME</a>\n+\n       <a\n         class=\"w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large\"\n         style=\"margin-top: 10px\"\n         onclick=\"toggleMenu()\"\n-        >&#9939;</a\n-      >\n+        >&#9939;</a>\n     </div>\n \n     <!-- Bar mobile view-->\n     <div\n"
+                },
+                {
+                    "date": 1741670531430,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,10 +31,10 @@\n   <body class=\"w3-light-white w3-margin\">\n     <!-- Navigation bar with links -->\n     <div\n       id=\"navbar\"\n-      class=\"fixed-navbar w3-bar w3-white w3-text-black\"\n-    >\n+      class=\"fixed-navbar w3-bar w3-white w3-text-black\">\n+\n       <img\n         src=\"images/slogo2022.jpg\"\n         class=\"w3-left\"\n         alt=\"Logo\"\n@@ -70,8 +70,9 @@\n         class=\"w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large\"\n         style=\"margin-top: 10px\"\n         onclick=\"toggleMenu()\"\n         >&#9939;</a>\n+        \n     </div>\n \n     <!-- Bar mobile view-->\n     <div\n"
+                },
+                {
+                    "date": 1741670750626,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -70,9 +70,9 @@\n         class=\"w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large\"\n         style=\"margin-top: 10px\"\n         onclick=\"toggleMenu()\"\n         >&#9939;</a>\n-        \n+\n     </div>\n \n     <!-- Bar mobile view-->\n     <div\n@@ -106,9 +106,9 @@\n     </div>\n \n     <div id=\"scroll-progress\"></div>\n \n-    <div class=\"w3-content\" style=\"max-width: 1600px\">\n+    <div class=\"w3-content\" style=\"max-width:fit-content\">\n       <!-- Image header -->\n       <header\n         class=\"w3-display-container w3-wide\"\n         style=\"padding-bottom: 0px; margin-top: 0px\"\n"
                 }
             ],
             "date": 1718543110408,
