@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 471,
+            "activePatchIndex": 479,
             "patches": [
                 {
                     "date": 1718543110408,
@@ -1892,6 +1892,38 @@
                 {
                     "date": 1742319293304,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n         class=\"w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right\"\n         style=\"margin-top: 10px\"\n         >CONTACT US</a>\n       <a href=\"#Services\" id=\"services\"\n-        class=\"w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right \"\n+        class=\"w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right\"\n         style=\"margin-top: 10px\"\n         >SERVICES</a>\n \n       <a href=\"#Portfolio\" id=\"portfolio\"\n"
+                },
+                {
+                    "date": 1742319490469,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -128,17 +128,10 @@\n     <!-- Portfolio section -->\n     <section class=\"w3-row-padding\" id=\"Portfolio\">\n       <div class=\"w3-center w3-padding-32\">\n         <h2 class=\"w3-wide w3-center\">PORTFOLIO</h2>\n-        <p class=\"w3-white w3-text-black w3-center-align\">\n-          Swatch Media began as a graphics and web design firm dedicated to providing a professional online presence. We have since expanded our services to include offline branding and marketing solutions. Our primary focus lies in Branding, Marketing, and Business Consultancy.\n-          Our team is driven by passion and expertise, ensuring that each project is approached with the utmost professionalism. We collaborate with companies and individuals, particularly startups aiming to establish and promote their brands. We pride ourselves on being a creative and results-oriented team, adept at prioritizing tasks and providing a clear direction in a fast-paced environment.          \n-          Our goal is to understand and address the needs of an increasingly dynamic economy, enabling us to meet and exceed the expectations of our current and future clients.\n-        </p>\n       </div>\n-\n-      <p class=\"w3-opacity w3-center\"><i>Previous Works</i></p>\n-\n+      \n       <div class=\"grid-cards-container\">\n         <article class=\"grid-card\">\n           <img src=\"images/heb.png\" alt=\"heb\" style=\"width: 100%\"/>\n           <div class=\"w3-container\">\n"
+                },
+                {
+                    "date": 1742319524000,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -129,9 +129,11 @@\n     <section class=\"w3-row-padding\" id=\"Portfolio\">\n       <div class=\"w3-center w3-padding-32\">\n         <h2 class=\"w3-wide w3-center\">PORTFOLIO</h2>\n       </div>\n-      \n+\n+      <p class=\"w3-opacity w3-center\"><i>Previous Works</i></p>\n+\n       <div class=\"grid-cards-container\">\n         <article class=\"grid-card\">\n           <img src=\"images/heb.png\" alt=\"heb\" style=\"width: 100%\"/>\n           <div class=\"w3-container\">\n"
+                },
+                {
+                    "date": 1742319561853,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -130,9 +130,9 @@\n       <div class=\"w3-center w3-padding-32\">\n         <h2 class=\"w3-wide w3-center\">PORTFOLIO</h2>\n       </div>\n \n-      <p class=\"w3-opacity w3-center\"><i>Previous Works</i></p>\n+      <p class=\"w3-opacity w3-center\"><i>Some of the works done before</i></p>\n \n       <div class=\"grid-cards-container\">\n         <article class=\"grid-card\">\n           <img src=\"images/heb.png\" alt=\"heb\" style=\"width: 100%\"/>\n"
+                },
+                {
+                    "date": 1742319579171,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -130,9 +130,9 @@\n       <div class=\"w3-center w3-padding-32\">\n         <h2 class=\"w3-wide w3-center\">PORTFOLIO</h2>\n       </div>\n \n-      <p class=\"w3-opacity w3-center\"><i>Some of the works done before</i></p>\n+      <p class=\"w3-opacity w3-center\"><i>Previous Works</i></p>\n \n       <div class=\"grid-cards-container\">\n         <article class=\"grid-card\">\n           <img src=\"images/heb.png\" alt=\"heb\" style=\"width: 100%\"/>\n"
+                },
+                {
+                    "date": 1742319598168,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -128,12 +128,11 @@\n     <!-- Portfolio section -->\n     <section class=\"w3-row-padding\" id=\"Portfolio\">\n       <div class=\"w3-center w3-padding-32\">\n         <h2 class=\"w3-wide w3-center\">PORTFOLIO</h2>\n+        <p class=\"w3-opacity w3-center\"><i>Previous Works</i></p>\n       </div>\n \n-      <p class=\"w3-opacity w3-center\"><i>Previous Works</i></p>\n-\n       <div class=\"grid-cards-container\">\n         <article class=\"grid-card\">\n           <img src=\"images/heb.png\" alt=\"heb\" style=\"width: 100%\"/>\n           <div class=\"w3-container\">\n"
+                },
+                {
+                    "date": 1742320079371,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -128,9 +128,13 @@\n     <!-- Portfolio section -->\n     <section class=\"w3-row-padding\" id=\"Portfolio\">\n       <div class=\"w3-center w3-padding-32\">\n         <h2 class=\"w3-wide w3-center\">PORTFOLIO</h2>\n-        <p class=\"w3-opacity w3-center\"><i>Previous Works</i></p>\n+        <p class=\"w3-white w3-text-black w3-center-align\">\n+          Swatch Media is a Branding, Marketing, and Business Consultancy firm keen on offering Professional Online, Offline and.\n+          Our team consists of professionals keen on collaborating with companies and individuals with an aim of establishing and promote their brands.          \n+        </p>\n+      <p class=\"w3-opacity w3-center\"><i>Previous Works</i></p>\n       </div>\n \n       <div class=\"grid-cards-container\">\n         <article class=\"grid-card\">\n"
+                },
+                {
+                    "date": 1742320105690,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -129,9 +129,9 @@\n     <section class=\"w3-row-padding\" id=\"Portfolio\">\n       <div class=\"w3-center w3-padding-32\">\n         <h2 class=\"w3-wide w3-center\">PORTFOLIO</h2>\n         <p class=\"w3-white w3-text-black w3-center-align\">\n-          Swatch Media is a Branding, Marketing, and Business Consultancy firm keen on offering Professional Online, Offline and.\n+          Swatch Media is a Branding, Marketing, and Business Consultancy firm.\n           Our team consists of professionals keen on collaborating with companies and individuals with an aim of establishing and promote their brands.          \n         </p>\n       <p class=\"w3-opacity w3-center\"><i>Previous Works</i></p>\n       </div>\n"
+                },
+                {
+                    "date": 1742320125301,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -130,9 +130,9 @@\n       <div class=\"w3-center w3-padding-32\">\n         <h2 class=\"w3-wide w3-center\">PORTFOLIO</h2>\n         <p class=\"w3-white w3-text-black w3-center-align\">\n           Swatch Media is a Branding, Marketing, and Business Consultancy firm.\n-          Our team consists of professionals keen on collaborating with companies and individuals with an aim of establishing and promote their brands.          \n+          Our team consists of professionals keen on collaborating with companies and individuals with an aim of establishing and promoting their brands.          \n         </p>\n       <p class=\"w3-opacity w3-center\"><i>Previous Works</i></p>\n       </div>\n \n"
                 }
             ],
             "date": 1718543110408,
