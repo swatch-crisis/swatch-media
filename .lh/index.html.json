@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 479,
+            "activePatchIndex": 480,
             "patches": [
                 {
                     "date": 1718543110408,
@@ -1924,6 +1924,10 @@
                 {
                     "date": 1742320125301,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -130,9 +130,9 @@\n       <div class=\"w3-center w3-padding-32\">\n         <h2 class=\"w3-wide w3-center\">PORTFOLIO</h2>\n         <p class=\"w3-white w3-text-black w3-center-align\">\n           Swatch Media is a Branding, Marketing, and Business Consultancy firm.\n-          Our team consists of professionals keen on collaborating with companies and individuals with an aim of establishing and promote their brands.          \n+          Our team consists of professionals keen on collaborating with companies and individuals with an aim of establishing and promoting their brands.          \n         </p>\n       <p class=\"w3-opacity w3-center\"><i>Previous Works</i></p>\n       </div>\n \n"
+                },
+                {
+                    "date": 1764007707523,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -780,9 +780,9 @@\n         &nbsp&nbsp;\n         <a href=\"tel:+254724500654\"\n           ><i class=\"fa fa-phone-square\"> +254724500654 </i></a\n         >\n-        <h6>© 2025. Swatch Media. All rights reserved.</h6>\n+        <h6>© 2025. Swatch Media. All rights reserved. A subsidiary of Aqila Software Ltd.</h6>\n       </div>\n     </footer>\n \n     <!--scroll button-->\n"
                 }
             ],
             "date": 1718543110408,
